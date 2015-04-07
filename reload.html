@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+#path1{
+		//animation-delay: 0.5s;
+  		//-webkit-animation-delay: 0.5s;
+  		animation-iteration-count:1;
+  		-webkit-animation-iteration-count:1;
+  		
+	}
+#path2{
+		animation-delay: 1s;
+  		-webkit-animation-delay: 1s;
+  		-webkit-animation-iteration-count:1;
+  		
+	}
+#path-line{
+	animation-delay: 1.3s;
+  	-webkit-animation-delay: 1.3s;
+  	-webkit-animation-iteration-count:1;
+}
+path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 0.5s linear 1;
+  animation: dash 0.5s linear 1;
+  animation-fill-mode : forwards;
+  -webkit-animation-fill-mode : forwards ;
+  
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* line 343, ../sass/aijiank.scss */
+ .pc {
+  height: 270px;
+  width: 50%;
+  margin: 0;
+  float: left;
+  position: relative;
+}
+/* line 349, ../sass/aijiank.scss */
+.pc #svg-pc {
+  width: 100%;
+  height: 100%;
+}
+/* line 353, ../sass/aijiank.scss */
+ .pc span {
+  color: #666;
+  position: absolute;
+  font-size: 8px;
+}
+/* line 359, ../sass/aijiank.scss */
+.pc .weight-circle {
+  opacity: 0;
+}
+/* line 362, ../sass/aijiank.scss */
+.pc .pc-circle1 {
+  background: #f09f11;
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+/* line 374, ../sass/aijiank.scss */
+.pc .pc-circle2 {
+  margin: 0;
+  background: #fff;
+  position: absolute;
+  top: 35%;
+  left: 36%;
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  z-index: 4;
+}
+/* line 386, ../sass/aijiank.scss */
+.pc .pc-circle2 span {
+  position: absolute;
+}
+/* line 391, ../sass/aijiank.scss */
+ p {
+  margin-top: 30px;
+  color: #666;
+}
+/* line 395, ../sass/aijiank.scss */
+.pc-height {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  height: 130px;
+  margin: 0;
+}
+/* line 402, ../sass/aijiank.scss */
+ .pc-height svg {
+  height: 100%;
+  width: 100%;
+  animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+  -webkit-animation-iteration-count: 1;
+}
+/* line 411, ../sass/aijiank.scss */
+ .pc-height #days-data1 {
+  position: relative;
+  height: 20px;
+  left: 15%;
+  opacity: 0;
+}
+/* line 417, ../sass/aijiank.scss */
+ .pc-height #days-data1 li {
+  float: left;
+  list-style: none;
+  margin: 0 20px 0 0;
+  height: 20px;
+  color: #666;
+  font-size: 10px;
+}
+/* line 426, ../sass/aijiank.scss */
+ .pc-height #days-data2 {
+  position: relative;
+  height: 20px;
+  left: 15%;
+  opacity: 0;
+}
+/* line 432, ../sass/aijiank.scss */
+.pc-height #days-data2 li {
+  float: left;
+  list-style: none;
+  margin: 0 9px 0 0;
+  height: 20px;
+  color: #666;
+  font-size: 10px;
+}
+/* line 441, ../sass/aijiank.scss */
+ .pc-height .date-num-span {
+  position: absolute;
+  opacity: 0;
+}
+/* line 446, ../sass/aijiank.scss */
+.pic-num {
+  width: 100%;
+  height: 80px;
+  margin: 30px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 452, ../sass/aijiank.scss */
+.pic-num .pic-icon {
+  float: left;
+  width: 33%;
+  height: 70px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 459, ../sass/aijiank.scss */
+ .pic-num .pic-icon .bac-ball {
+  float: left;
+  margin: 0;
+  background: #f3f3f3;
+  position: relative;
+  top: 10px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+/* line 471, ../sass/aijiank.scss */
+#content .c-left .c-left-2 .pic-num .pic-icon .bac-ball img {
+  height: 50px;
+  width: 50px;
+}
+/* line 478, ../sass/aijiank.scss */
+#content .c-left .c-left-2 .pic-num .pic-icon .pic-text {
+  margin: 0;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  color: #666;
+}
+/* line 484, ../sass/aijiank.scss */
+#content .c-left .c-left-2 .pic-num .pic-icon .pic-text .color-span {
+  color: #f4aa28;
+}
+
+</style>
+<script src="./stylesheets/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".path2").mouseover(function(){
+			$(this).css("transform","matrix(1.1,0,0,1.1,-14.5,-11.5)");
+			
+		});
+		$(".path2").mouseout(function(){
+			$(this).css("transform","matrix(1,0,0,1,0,0)");
+			
+		});
+		$(".path4").mouseover(function(){
+			$(this).css("transform","matrix(1.1,0,0,1.1,-9.9,-4)");
+			
+		});
+		$(".path4").mouseout(function(){
+			$(this).css("transform","matrix(1,0,0,1,0,0)");
+			
+		});
+	});
+</script>
+<body>
+					<svg width="290px" height="270px">			
+						<path  d="
+				  		   M145,82				           
+				           A53,53,0,0,1,190.89934640 108.5" 
+				           stroke="#32addb"  
+				           stroke-width="20" 
+				           fill="#fff" 				          
+							id="path2"
+							class="path2"
+				           />
+				        <path  d="
+				  		   M190.89934640 108.5				           
+				           A53,53,0,0,1,198,135" 
+				           stroke="#85c51f"  
+				           stroke-width="20" 
+				           fill="#fff" 
+				           id="path2"/>
+				        <path d="
+							M 145,135
+							T 205.621778264 100"
+							stroke="#fff"
+							stroke-width="2"
+							/>
+							
+				        <path  d="
+				  		   M198,135         
+				           A53,53,0,1,1,145,82" 
+				           stroke="#f09f11"  
+				           stroke-width="20" 
+				           fill="none"  
+				           transform="matrix(1,0,0,1,0,0)" 
+				           class="path2"
+				           id="path2"/>
+				         <path d="
+							M 145,135
+							L 208,135"
+							stroke="#fff"  
+							stroke-width="2"/>
+				        <path d="
+						M 145,135
+						L 145,65"
+						stroke="#fff"  
+						stroke-width="2"
+						/>
+						<path d="
+							M 190,100
+							T 220,60"
+							stroke="#2ba8d7"
+							stroke-width="1.6"
+							id="path-line"
+						/>
+						<path d="
+							M 205,120
+							T 240,120"
+							stroke="#A3E239"
+							stroke-width="1.6"
+							id="path-line"
+						/>
+						<path d="
+							M 55,180
+							T 84,145"
+							stroke="#E7A93E"
+							stroke-width="1.6"
+							id="path-line"
+						/>
+					</svg>
+					
+</body>
+</html>

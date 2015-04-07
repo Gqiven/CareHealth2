@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg width="290" height="270" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <path class="path2" id="path2" fill="#fff" stroke-width="20" stroke="#32addb" d="m145,82a53,53 0 0 145.899353,26.5"/>
+  <path id="path2" fill="#fff" stroke-width="20" stroke="#85c51f" d="m190.899353,108.5a53,53 0 0 17.100647,26.5"/>
+  <path stroke-width="2" stroke="#fff" d="m145,135t60.62178,-35"/>
+  <path id="path2" class="path2" fill="none" stroke-width="20" stroke="#f09f11" d="m198,135a53,53 0 1 1-53,-53"/>
+  <path stroke-width="2" stroke="#fff" d="m145,135l63,0"/>
+  <path stroke-width="2" stroke="#fff" d="m145,135l0,-70"/>
+  <path id="path-line" stroke-width="1.6" stroke="#2ba8d7" d="m190,100t30,-40"/>
+  <path id="path-line" stroke-width="1.6" stroke="#A3E239" d="m205,120t35,0"/>
+  <path id="path-line" stroke-width="1.6" stroke="#E7A93E" d="m55,180t29,-35"/>
+ </g>
+</svg>

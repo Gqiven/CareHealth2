@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<!--<meta name="author" content="@my_coder">http://code.jquery.com/jquery-1.10.1.min.js-->
+</head>
+<body>
+<script type="text/javascript" src="jquery-1.11.2.min.js" ></script>
+<script src="highcharts.js"></script>
+<!--<script src="http://code.highcharts.com/modules/exporting.js"></script>-->
+
+<div id="container" style="width:290px; height:270px; margin: 0"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+    //var a = $('#container').children().children().children().children().children();
+    $('#container').highcharts({
+        //图表区选项
+        chart: {
+        	type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            height: 300
+        },
+        credits:{text:""},
+        //标题选项
+        colors:[
+        '#2ba8d7',
+        '#7dbe0f',//第一个颜色，欢迎加入Highcharts学习交流群294191384
+        '#f09f11',                
+        ],
+        title: {
+            text: ''//'Browser market shares at a specific website, 2010'
+        },
+        //数据点提示框
+        tooltip: {
+            enabled: false
+        },
+        //数据列选项
+        series: [{
+        	innerSize: '60%',
+            type: 'pie',
+            name: '',
+            data: [
+            	{
+                    name: '强度运动',
+                    y:  20.83,
+                    sliced:false,
+                    selected: true,
+                    id:'wfg',
+                    events: {    //事件
+            			mouseOver: function(event)//注意大写O
+           	 				{
+           	 					this.sliced = true;
+            				},
+            				mouseOut: function(event)//注意大写O
+           	 				{
+                				//alert(this.id+222);
+                				//this.hide();
+                			     //sliced:true;
+            				},
+                	}
+                },
+                {
+                    name: '适度运动',
+                    y:  8.33,
+                    //sliced: true,
+                    selected: true
+                },
+                {
+                    name: '轻度/静止',
+                    y:  70.833,
+                    //sliced: true,
+                    selected: true
+                },
+            ]
+        }]
+    });
+});
+</script>
+</body>
+</html>

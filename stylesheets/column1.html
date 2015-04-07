@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column',
+                width: 200,
+            },
+            title: {
+                text: '最近五次燃烧的卡路里'
+            },
+            credits:{enabled:false},
+            xAxis: {
+                //lineColor:'#FFFFFF'，
+                type: 'category',
+                labels: {
+                    align: 'center',
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                },
+                tickWidth:0,//去除小竖线
+                lineColor: "#757688",
+                lineWidth: 1,// 轴的宽度
+                categories: ['03.25',
+                    '03.30', 
+                    '04.05',
+                    '04.10'] 
+            },
+            yAxis: {
+                //min: 0,
+                title: {
+                    text: ''
+                },
+                labels:{
+                    enabled: false//去除刻度
+                },
+                 //lineColor: "red",// Y轴的颜色
+                lineWidth: 0,// Y轴的宽度
+                gridLineWidth: 0// 横向格线宽度
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                positioner: function (labelWidth, labelHeight, point) {
+                    var tooltipX, tooltipY;
+                    if (point.plotX < (labelWidth+30)) {
+                        //alert(point.plotX);//触点所在的X轴坐标
+                        tooltipX = point.plotX + 20;
+                        tooltipY = point.plotY;
+                    } else {
+                        tooltipX =point.plotX - 90;
+                        tooltipY = point.plotY;
+                    }
+                    return {
+                        x: tooltipX,
+                        y: tooltipY
+                    };
+                },
+                formatter:function(){
+                    return this.y+"卡路里";
+                },
+                borderRadius: 10,
+                borderColor: '#666',
+                style:{
+                    color: '#666'
+                }
+            },
+            series: [{
+                color:'#2F56D2',
+                name: 'Date',
+                data: [{
+                    color: '#2F56D2',
+                    y: 66, 
+                    // selected:true
+                },
+                {
+                    //color:'#2F56D2',
+                    y: 101,
+                    //selected:true 
+                },{
+                    y: 350,
+                    //selected:true
+                },{
+                    y: 19,
+                    //selected:true
+                }
+            ],
+                dataLabels: {
+                    enabled: true,
+                    align: 'center',
+                    x: 4,
+                    y: 4,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif',
+                    }
+                }
+            }]
+        });
+    })
+		</script>
+	</head>
+	<body>
+<script src="highcharts.js"></script>
+<div id="container" style="=width: 170px; height: 170px; margin: 0 0 0 50px"></div>
+	</body>
+</html>

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./stylesheets/aijiank.css" type="text/css">
+	<script src="./stylesheets/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="h-list">
+			<div class="logo">
+				<!--<h1 style="color: #6f9f00;display: inline-block;">爱健康</h1>-->
+				<img src="./images/logo-home.png" alt="">
+			</div>
+			<ul>
+				<li class="active"><a>首页</a></li>
+				<li><a>健康计划</a></li>
+				<li><a>健康管理</a></li>
+				<li><a>家人关怀</a></li>
+				<li><a>健康档案</a></li>
+			</ul>
+			<div class="hright">
+				<a href="javascript:;">
+					<img src="./images/message.png" alt="">
+				</a>
+
+				<div class="user">
+					<img class="user-pc" src="./images/default.png" alt="">
+						<!--<img src="./images/default.png" alt=""><span class="tr"></span>-->
+					</img>
+					<p id="userMessageP">
+						<a id="userMessageA" href="javascript:;">weijianxing</a>
+					</p>
+					<a href="javascript:;">
+						<div class="triangle"></div>
+					</a>	
+				</div>
+				
+			</div>
+			<div id="userMune" class="hideTagName">
+				<ul>
+					<li><a href="javascript:;">账号设置</a></li>
+					<li><a href="javascript:;">个人信息</a></li>
+					<li><a href="javascript:;">我的设备</a></li>
+					<li><a href="javascript:;">退出</a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="c-left">
+			<div class="c-left-1">
+				<h3>我加入爱健康以来</h3>
+				<div class="balls">
+					<div class="ball1" style="top: 20px;left: 30%;"></div>
+					<div class="ball2" id="move-ball">
+						<div class="fire-energy" id="fire-energy">
+							<p>共燃烧</p><!-- style="left: 50%;top: 20%;"-->
+							<p><!--style="margin-top:-1px;"left: 40%;top: 50%;-->
+								<span style="font-size:20px;font-weight:bold;">1215</span>卡
+							</p>
+							<div></div>
+						</div>
+					</div>
+					<div class="ball3" id="move-ball">
+						<div id="sport-days">
+							<p style="left: 50%;top: 20%;">已运动</p>
+							<p style="left: 40%;top: 50%;">
+								<span style="font-size:20px;font-weight:bold;">12</span>天
+							</p>
+							<div class="fire-energy-num"></div>
+							<div></div>
+						</div>
+					</div>
+					<div class="ball4" id="move-ball">
+						<div id="sport-km">
+							<p style="left: 50%;top: 20%;">积累路程</p>
+							<p style="left: 40%;top: 50%;">
+								<span style="font-size:20px;font-weight:bold;">15</span>Km
+							</p>
+							<div class="fire-energy-num"></div>
+							<div></div>
+						</div>
+					</div>
+					<div class="ball1"  style="top: 130px;right: 120px;"></div>
+				</div>
+			</div>
+			<div class="c-left-2">
+				<h4 class="equipment" id="equipment1">
+					<a href="javascript:;">智能配件</a>
+				</h4>	
+				<h4 class="equipment" id="equipment2" style="background:#6f9f00;">
+					<a href="javascript:;" style="color:#fff">手机</a>
+				</h4>
+				<!--style="background: #7dbe0f;"<div class="waveofsport"></div>width="500px" height="500px"lass="h4-active"class="a-active"-->
+				<div  class="pc">
+					<svg width="290px" height="270px">			
+						<path  d="
+				  		   M145,82				           
+				           A53,53,0,0,1,190.89934640 108.5" 
+				           stroke="#32addb"  
+				           stroke-width="20" 
+				           fill="#fff" 				          
+							id="path2"
+							class="path2"
+				           />
+				        <path  d="
+				  		   M190.89934640 108.5				           
+				           A53,53,0,0,1,198,135" 
+				           stroke="#85c51f"  
+				           stroke-width="20" 
+				           fill="#fff" 
+				           id="path2"/>
+				        <path d="
+							M 145,135
+							T 205.621778264 100"
+							stroke="#fff"
+							stroke-width="2"
+							/>
+							
+				        <path  d="
+				  		   M198,135         
+				           A53,53,0,1,1,145,82" 
+				           stroke="#f09f11"  
+				           stroke-width="20" 
+				           fill="none"  
+				           transform="matrix(1,0,0,1,0,0)" 
+				           class="path2"
+				           id="path2"/>
+				         <path d="
+							M 145,135
+							L 208,135"
+							stroke="#fff"  
+							stroke-width="2"/>
+				        <path d="
+						M 145,135
+						L 145,65"
+						stroke="#fff"  
+						stroke-width="2"
+						/>
+						<path d="
+							M 190,100
+							T 220,60"
+							stroke="#2ba8d7"
+							stroke-width="1.6"
+							id="path-line"
+						/>
+						<path d="
+							M 205,120
+							T 240,120"
+							stroke="#A3E239"
+							stroke-width="1.6"
+							id="path-line"
+						/>
+						<path d="
+							M 55,180
+							T 84,145"
+							stroke="#E7A93E"
+							stroke-width="1.6"
+							id="path-line"
+						/>
+					</svg>
+					<div class="pc-circle2">
+							<p style="font-weight: bold;margin-top:20px;">运动时长</p>
+							<span style="color:#f4aa28;left:20px;font-size:20px;">0</span>
+							<span style="bottom: 20px;">分钟</span>
+					</div>
+					<span class="weight-circle" style="bottom:70px;left:10px">轻度/静止</span>
+					<span class="weight-circle" style="top:110px;right:0px">适度运动</span>
+					<span class="weight-circle" style="top:50px;right:20px">强度运动</span>
+				</div>
+				<div class="pc" >
+					<p>最近五次燃烧的卡路里</p>
+					<div class="pc-height" id="pc-height1" >
+						<svg id="heigth-svg1">
+							<path d="
+								M 60,130
+								L 60,120"
+								stroke="#0A9DF7"
+								stroke-width="30"	
+								id="path2"							
+							/>
+							<path d="
+								M 110,130
+								L 110,110"
+								stroke="#0A9DF7"
+								stroke-width="30"
+								id="path2"								
+							/>
+							<path d="
+								M 160,130
+								L 160,70"
+								stroke="#0A9DF7"
+								stroke-width="30"	
+								id="path2"							
+							/>
+							<path d="
+								M 210,130
+								L 210,123"
+								stroke="#0A9DF7"
+								stroke-width="30"
+								id="path2"								
+							/>
+						</svg>
+						<ul id="days-data1">
+							<li>08.05</li>	
+								<!--<span class="date-num-span1" style="bottom:12px;">66</span>
+								<span style="bottom:-20px;left:-3px;"></span>-->
+							<li>08.07</li>
+								<!--<span class="date-num-span2" style="bottom:22px;">101</span>
+								<span style="bottom:-20px;left:-3px;"></span>-->
+							<li>08.09</li>	
+								<!--<span class="date-num-span3" style="bottom:72px;">350</span>
+								<span style="bottom:-20px;left:-3px;"></span>-->
+							<li>08.11</li>	
+								<!--<span class="date-num-span4" style="bottom:7px;">19</span>
+							<span style="bottom:-20px;left:-3px;"></span>-->	
+						</ul>
+
+						<span class="date-num-span" style="bottom:12px;left:50px;">66</span>
+						<span class="date-num-span" style="bottom:22px;left:101px;">101</span>
+						<span class="date-num-span" style="bottom:72px;left:152px;">350</span>
+						<span class="date-num-span" style="bottom:7px;left:203px;">19</span>
+					</div>
+					<div class="pc-height" id="pc-height2" style="display:none">
+						<svg>
+							<path d="
+								M 60,130
+								L 60,120"
+								stroke="#0A9DF7"
+								stroke-width="20"	
+								id="path2"							
+							/>
+							<path d="
+								M 100,130
+								L 100,125"
+								stroke="#0A9DF7"
+								stroke-width="20"
+								id="path2"								
+							/>
+							<path d="
+								M 140,130
+								L 140,129"
+								stroke="#0A9DF7"
+								stroke-width="20"	
+								id="path2"							
+							/>
+							<path d="
+								M 180,130
+								L 180,60"
+								stroke="#0A9DF7"
+								stroke-width="20"
+								id="path2"								
+							/>
+							<path d="
+								M 220,130
+								L 220,129"
+								stroke="#0A9DF7"
+								stroke-width="20"
+								id="path2"								
+							/>
+						</svg>
+						<ul id="days-data2">
+							<li>01.22</li>	
+							<li>01.23</li>
+							<li>01.26</li>	
+							<li>03.03</li>	
+							<li>03.04</li>	
+						</ul>
+						<span class="date-num-span" style="bottom:12px;left:53px;">23</span>
+						<span class="date-num-span" style="bottom:10px;left:97px;">5</span>
+						<span class="date-num-span" style="bottom:6px;left:137px;">1</span>
+						<span class="date-num-span" style="bottom:77px;left:170px;">170</span>
+						<span class="date-num-span" style="bottom:6px;left:217px;">1</span>
+					</div>
+				</div>
+				
+				<div class="pic-num">
+					<div class="pic-icon">
+						<div class="bac-ball">
+							<img src="./images/foot-icon.png" alt="">
+						</div>
+						<div class="pic-text">
+							<span>步数</span><br>
+							<span class="color-span">0</span>
+							<span>步</span>
+						</div>
+					</div>
+					<div class="pic-icon">
+						<div class="bac-ball">
+							<img src="./images/hint-icon.png" alt="">
+						</div>
+						<div class="pic-text">
+							<span>距离</span><br>
+							<span class="color-span">0</span>
+							<span>公里</span>
+						</div>
+					</div>
+					<div class="pic-icon">
+						<div class="bac-ball">
+							<img src="./images/fire-icon.png" alt="">
+						</div>
+						<div class="pic-text">
+							<span>燃烧</span><br>
+							<span class="color-span">0</span>
+							<span>卡</span>
+						</div>
+					</div>
+					<!--<ul>
+						<li>
+							<div class="bac-ball">
+								<img src="./images/foot-icon.png" alt="">
+							</div>
+							<div class="pic-text">
+								<span>步数</span><br>
+								<span class="color-span">0</span>
+								<span>步</span>
+							</div>
+							
+						</li>
+						<li>
+							<div class="bac-ball">
+								<img src="./images/hint-icon.png" alt="">
+							</div>
+							<div class="pic-text">
+								<span>距离</span><br>
+								<span class="color-span">0</span>
+								<span>公里</span>
+							</div>
+						</li>
+						<li>
+							<div class="bac-ball">
+								<img src="./images/fire-icon.png" alt="">
+							</div>
+							<div class="pic-text">
+								<span>燃烧</span><br>
+								<span class="color-span">0</span>
+								<span>卡</span>
+							</div>
+						</li>
+					</ul>-->
+				</div>
+			</div>
+			<div class="c-left-3">
+				<div class="health-target">
+					<ul>
+						<li class="healthTargetLi2" id="targetLi1">
+							<a class="index" href="javascript:;">运动量</a>
+						</li><!--style="color: #f09f11;"-->
+						<li class="healthTargetLi1" id="targetLi2"><a class="index" href="javascript:;">体重</a></li>
+						<li class="healthTargetLi1" id="targetLi3"><a class="index" href="javascript:;">血压</a></li>
+						<li class="healthTargetLi1" id="targetLi4"><a class="index" href="javascript:;">血糖</a></li>
+					</ul>
+				</div>
+				<div class="health-date">
+					<ul>
+						<li class="dateBackground1" id="target-date1">
+							<a href="javascript:;" class="target-dateA">当天</a>
+						</li>
+						<li class="dateBackground1" id="target-date2">
+							<a href="javascript:;" class="target-dateA">7天</a>
+						</li>
+						<li class="dateBackground2" id="target-date3">
+							<a href="javascript:;" class="target-dateA">30天</a>
+							<!-- style="background:#6f9f00;"style="color: #fff;"
+						                                         class="target-date" -->
+						</li>
+					</ul>
+				</div>
+				<div class="health-pc" >
+					<p>运动量走势图</p>
+					<div>
+						<svg>
+							<path d="
+								M 0,200
+								L 0,20"
+								stroke="#000"
+								stroke-width="2"
+								id="path2"					
+							/>
+							<path d="
+								M 0,200
+								L 406,200"
+								stroke="#000"
+								stroke-width="2"
+								id="path2"
+							/>
+							<path d="
+								M 0,170
+								L 406,170"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,140
+								L 406,140"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,110
+								L 406,110"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,80
+								L 406,80"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,50
+								L 406,50"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,20
+								L 406,20"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 203,200
+								L 203,20"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 406,200
+								L 406,20"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 101.5,50
+								L 304.5,200"
+								stroke="#0A9DF7"
+								stroke-width="3"
+								id="path-line"
+							/>
+							<circle cx="101.5" cy="50" r="4" style="fill:#2A40DA" class="circle-node"/>
+							<circle cx="302" cy="197" r="4" style="fill:#2A40DA" class="circle-node"/>
+						</svg>
+						<ul class="trent-num">
+							<li>3.0</li>
+							<li>2.5</li>
+							<li>2.0</li>
+							<li>1.5</li>
+							<li>1.0</li>
+							<li>0.5</li>
+							<li>0.0</li>
+						</ul>
+						<span style="left: 101.5px;" class="trent-num">03-03</span>
+						<span style="left: 304.5px;" class="trent-num">03-04</span>
+					</div>	
+				</div>
+				<div class="health-pc-none" style="display:none;">
+					<div class="curve" id="sportCurve">亲，您还没有运动曲线哦！</div>
+					<div class="curve" id="weightCurve">亲，您还没有体重曲线哦！</div>
+					<div class="curve" id="bloodPressureCurve">亲，您还没有血压曲线哦！</div>
+					<div class="curve" id="bloodSugarCurve">亲，您还没有血糖曲线哦！</div>
+				</div>
+				<div class="health-icon"></div>
+			</div>
+		</div>
+		<div class="c-right">
+			<div class="c-right-1">
+				<div id="masterDate">
+					<span style="position: relative;">
+						<img src="./images/king.png" alt="">
+					</span>
+					<span style="color:#f4aa28;">运动达人榜</span>
+				</div>
+				<ul class="masterUl">
+					<li ><p class="menuMaster"><a href="javascript:;">昨天</a></p></li>
+					<li >
+						<p class="menuMaster" style="background:#6f9f00;">
+						<a href="javascript:;" style="color:#fff">今天</a></p>
+					</li>
+					<li ><p class="menuMaster"><a href="javascript:;">7天</a></p></li>
+					<li ><p class="menuMaster" id="allMaster"><a href="javascript:;">所有</a></p></li>
+				</ul>
+				<div id="allMadle">
+					<div>
+						<span>1</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>楞子</span>
+							<span>155.17公里</span>
+							<svg>
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div>
+						<span>2</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>小新星</span>
+							<span>96.79公里</span>
+							<svg>
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div>
+						<span>3</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>小魏</span>
+							<span>15.77公里</span>
+							<svg>
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div>
+						<span>4</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>田苦辣</span>
+							<span>11.13公里</span>
+							<svg>
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="c-right-2">
+				<h5>本周成绩</h5>
+				<div class="plan">
+					<svg id="svg-play">
+						<path  d="
+						  	M73,20
+						    A53,53,0,0,1,118.89934640 46.5"
+						    stroke="#85c51f"  
+						    stroke-width="20" 
+						    fill="none" 
+						    transform="matrix(1,0,0,1,0,0)" 
+						    id="path2"
+						    class="path4"/>
+						<path  d="
+						  	M118.89934640 46.5           
+						    A53,53,0,1,1,73,20" 
+						    stroke="#f09f11"  
+						    stroke-width="20" 
+						    fill="none"  
+						    transform="matrix(1,0,0,1,0,0)" 
+						    id="path2"
+						    class="path4"/>
+						<path d="
+							M 73,73
+							T 133.621778264 38"
+							stroke="#deeeeb"
+							stroke-width="2"
+							/>	
+						<path d="
+							M 73,73
+							L 73,7"
+							stroke="#deeeeb"  
+							stroke-width="2"/>
+					</svg>
+					<div class="plan-circle2">
+						<p class="plan-p1">20%</p> 
+						<p class="plan-p2">计划完成度</p>
+					</div>
+				</div>
+				<div class="care-way">
+					<div>
+						<span class="care-span1">长辈关爱</span>
+						<div></div>
+						<span class="care-span2">4次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">晚辈关爱</span>
+						<div></div>
+						<span class="care-span2">3次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">夫妻浪漫</span>
+						<div></div>
+						<span class="care-span2">4次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">步行</span>
+						<div></div>
+						<span class="care-span2">12公里/周</span>
+					</div>
+					<div>
+						<span class="care-span1">跑步</span>
+						<div></div>
+						<span class="care-span2">33公里/周</span>
+					</div>
+					<div>
+						<span class="care-span1">骑行</span>
+						<div></div>
+						<span class="care-span2">22公里/周</span>
+					</div>
+					<div>
+						<span class="care-span1">篮球</span>
+						<div></div>
+						<span class="care-span2">3次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">控烟</span>
+						<div></div>
+						<span class="care-span2">1盒/周</span>
+					</div>
+					<div>
+						<span class="care-span1">限酒</span>
+						<div></div>
+						<span class="care-span2">4次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">电影</span>
+						<div></div>
+						<span class="care-span2">3次/周</span>
+					</div>
+				</div>
+			</div>
+			<div class="c-right-3">
+				<h2>健康小贴士</h2>
+				<div>
+					<a href="javascript:;">
+						单车走天下 济南市郊的完美旅程
+					</a>
+					<p>
+						骑行是一种健康自然的运动旅游方式 ，能充分享受旅行过程之美 。一辆单车一套骑行装备即可出行 ，简单又环保。最近爱上骑行，作为新手，趁周末来个济南环城游，不亦乐乎！
+					</p>
+				</div>
+				<div>
+					<a href="javascript:;">
+						七个恋爱小技巧 让你们七年不痒
+					</a>
+					<p>
+						一场美满的婚姻，需要婚姻双方的诚恳和责任心，也需要面对具体事情的小技巧和小方法。这两方面结合，一定能将婚姻打造得坚固而快乐。
+					</p>
+				</div>
+				<div>
+					<a href="javascript:;">
+						体验季|关于妇科检查的小常识
+					</a>
+					<p>
+						由于现在女性妇科疾病高居不下，因此妇科医生都建议女性们定期进行妇科检查，不过大部分的女性都对妇科检查感到排斥甚至害怕，原因有非常多，不过为了自己身体健康的着想有必要进行提早预防。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p class="about-us">
+			<a href="javascript:;">关于我们</a>
+			<a href="javascript:;">联系我们</a>
+		</p>
+		<p class="plant">Copyright © 2015 爱健康管理平台</p>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		move2();
+		move3();
+		move4();
+		setInterval("move2()",12000);
+		setInterval("move3()",12000);
+		setInterval("move4()",12000);
+		//$(".plan-p1").animate({opacity:"0"},10);
+		//$(".date-num-span").hide();
+		
+		//setInterval("showSpan()",3000);
+		$(".circle-node").animate({opacity:"1"},3000);
+		$("#days-data1").animate({opacity:"1"},1000);
+		$("#days-data2").animate({opacity:"1"},1000);
+		$(".date-num-span").animate({opacity:"1"},3000);
+		$(".plan-p1").animate({opacity:"1"},1000);
+		$(".weight-circle").animate({opacity:"1"},4500);
+		$(".trent-num").animate({opacity:"1"},3000);
+		$(".path2").mouseover(function(){
+			$(this).css("transform","matrix(1.1,0,0,1.1,-14.5,-11.5)");
+			
+		});
+		$(".path2").mouseout(function(){
+			$(this).css("transform","matrix(1,0,0,1,0,0)");
+			
+		});
+		$(".path4").mouseover(function(){
+			$(this).css("transform","matrix(1.1,0,0,1.1,-9.9,-4)");
+			
+		});
+		$(".path4").mouseout(function(){
+			$(this).css("transform","matrix(1,0,0,1,0,0)");
+			
+		});
+		showUserM();
+		hideUserM();
+		clickMaster();
+		clickEquipment();
+		clickTargetDateA();
+		clickIndex();
+		clickEqShowPc1();
+		clickEqShowPc2();
+		showAllMadle();
+		hideAllMadel();
+		//showCurve();
+		showWeight30();
+	});
+    function hideUserM(){
+    	$("body").click(function(){
+    		$("#userMune").removeClass("showTagName").addClass("hideTagName");///a在body里，所以不出
+    	});
+    }
+    function showUserM(){
+    	$("#userMessageA").click(function(){
+    		//alert("sdd");
+    		$("#userMune").removeClass("hideTagName").addClass("showTagName");////alert("");
+    		//var a=$(".userMune").attr("class");
+    		//
+    	});
+    }
+	function move2(){
+		$(".ball2").animate({top:'+=15'},4000).animate({top:'-=30'},4000).animate({top:'+=15'},4000);
+	}
+	function move3(){
+		$(".ball3").animate({top:'+=20'},3000).animate({top:'-=40'},3000).animate({top:'+=20'},3000);
+	}
+	function move4(){
+		$(".ball4").animate({top:'+=20'},4000).animate({top:'-=40'},4000).animate({top:'+=20'},4000);
+	}
+    function clickTargetDateA(){
+    	$(".target-dateA").click(function(){
+    		$(this).parent().parent().children().removeClass("dateBackground2").addClass("dateBackground1");
+    		$(this).parent().removeClass("dateBackground1").addClass("dateBackground2");//需要先移除再加，只表现第一个class属性
+    		var lis = $(".health-target").children().children();
+    		//alert($(lis[2]).attr("class").toString());
+    		var classNameD = $(this).parent().attr("class").toString();
+    		var idNameD = $(this).parent().attr("id").toString();
+    		/*var cs = $(".curve");
+			for(var  i= 0,l =cs.length;i < l;i++){
+				$(".curve").css("display","none");	
+			}*/
+			//alert("none");
+    		for(var i=0,l=lis.length;i<l;i++){
+    			
+    			var classNameT = $(lis[i]).attr("class").toString();
+    			//var idNameD = $(this).parent().attr("id").toString();
+    			var idNameT = $(lis[i]).attr("id").toString();
+             	//var classNameD = $(this).parent().attr("class").toString();
+             	var cs = $(".curve");
+				for(var  i= 0,l =cs.length;i < l;i++){
+					$(".curve").css("display","none");	
+				}
+				if(idNameD=="target-date3"){
+					//alert(idNameD);
+					if(classNameT=="healthTargetLi2"){
+						if(idNameT=="targetLi1"){
+							$(".health-pc-none").css("display","none");
+    						$(".health-pc").css("display","block");
+						}
+						if(idNameT=="targetLi2"){
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#weightCurve").css("display","block");
+						}
+						if(idNameT=="targetLi3"){
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodPressureCurve").css("display","block");
+						}
+						else{
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodSugarCurve").css("display","block");
+						}
+					}
+					else{
+						continue;
+					}
+				}
+				else if(idNameD=="target-date1" || idNameD=="target-date2"){
+					alert(idNameD);
+					if(classNameT=="healthTargetLi2"){
+						alert(classNameT);
+						if(idNameT=="targetLi1"){
+							alert(idNameT);
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#sportCurve").css("display","block");
+    						/*var cs = $(".curve");
+							for(var  i= 0,l =cs.length;i < l;i++){
+								$(".curve").css("display","none");	
+							}
+							$("#sportCurve").css("display","block");*/
+						}
+						if(idNameT=="targetLi2"){
+							alert(idNameT);
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#weightCurve").css("display","block");
+						}
+						if(idNameT=="targetLi3"){
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodPressureCurve").css("display","block");
+						}
+						else if(idNameT=="targetLi4"){
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodSugarCurve").css("display","block");
+						}
+					}
+					else{
+						continue;//break;//alert("none");//return;
+					}
+				}
+					/*if(idNameT=="targetLi1" ){
+						if(idNameD=="target-date1" || idNameD=="target-date2"){
+								
+						}else{
+							$(".health-pc-none").css("display","none");
+    						$(".health-pc").css("display","block");
+						}	
+					}
+					if(idNameT=="targetLi2" ){
+						for(var k=0;k<4;k++){
+							idNameD=="target-date1"+k;
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#weightCurve").css("display","block");	
+						}
+					}
+					if(idNameT=="targetLi3" ){
+						for(var k=0;k<4;k++){
+							idNameD=="target-date1"+k;
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodPressureCurve").css("display","block");	
+						}
+					}
+					if(idNameT=="targetLi4" ){
+						for(var k=0;k<4;k++){
+							idNameD=="target-date1"+k;
+							$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodSugarCurve").css("display","block");	
+						}
+					}
+
+				}*/
+
+    			/*if(idNameT=="healthTargetLi2" && idNameD=="target-date1"){
+    				//alert($(lis[i]).attr("id").toString()+idNameD);
+    				$(".health-pc").css("display","none");
+    				$(".health-pc-none").css("display","block");
+    			}
+    			if(idNameT=="healthTargetLi2" && idNameD=="target-date2"){
+    				//alert($(lis[i]).attr("id").toString()+idNameD);
+    				$(".health-pc").css("display","none");
+    				$(".health-pc-none").css("display","block");    			}
+    			if(idNameT=="healthTargetLi2" && idNameD=="target-date3"){
+    				//alert($(lis[i]).attr("id").toString()+idNameD);
+    				$(".health-pc-none").css("display","none");
+    				$(".health-pc").css("display","block");
+    			}*/
+    			//}
+    		}
+    	});
+    }/////////////////////////////////////////////////////////////////////////////////////////////////////
+    //function targetToDate(){
+
+    ///}
+    function clickIndex(){
+			$(".index").click(function () {
+			$(this).parent().parent().children().removeClass("healthTargetLi2").addClass("healthTargetLi1");
+    		$(this).parent().removeClass("healthTargetLi1").addClass("healthTargetLi2");
+    		var lis = $(".health-date").children().children();
+    		//alert($(lis[2]).attr("class").toString());
+    		var cs = $(".curve");
+			for(var  i= 0,l =cs.length;i < l;i++){
+				$(".curve").css("display","none");	
+			}
+    		for(var i=0,l=lis.length;i<l;i++){
+    			var classNameD = $(lis[i]).attr("class").toString();
+    			var idNameT = $(this).parent().attr("id").toString();
+    			var idNameD = $(lis[i]).attr("id").toString();
+    			var classNameT = $(this).parent().attr("class").toString();
+    			/*var cs = $(".curve");
+				for(var  i= 0,l =cs.length;i < l;i++){
+					$(".curve").css("display","none");	
+				}*/
+				//if(idNameT=="targetLi1")
+				if(idNameT=="targetLi1"){
+					if(idNameD=="target-date3"){
+						$(".health-pc").css("display","block");
+    					$(".health-pc-none").css("display","none");
+					}else{
+						$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#sportCurve").css("display","block");
+					}
+				}
+				if(idNameT=="targetLi2"){
+					if(idNameD=="target-date1" || idNameD=="target-date2" ||idNameD=="target-date3"){
+						$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#weightCurve").css("display","block");
+					}
+				}
+				if(idNameT=="targetLi3"){
+					if(idNameD=="target-date1" || idNameD=="target-date2" ||idNameD=="target-date3"){
+						$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#bloodPressureCurve").css("display","block");
+					}
+				}
+				if(idNameT=="targetLi4"){
+					if(idNameD=="target-date1" || idNameD=="target-date2" ||idNameD=="target-date3"){
+						$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#bloodSugarCurve").css("display","block");
+					}
+				}
+    		}
+		});
+	}
+    /*function clickTargetDate(){
+		$(".target-date").click(function () {
+			var pArray = $(".target-date");
+			for(var i=0,l = pArray.length;i < l;i++){
+				$(pArray[i]).css({"background":"#f3f3f3"});//,"color":"#666"
+				$(pArray[i]).children().css("color","#666");
+			}
+			$(this).css({"background":"#6f9f00"});
+			$(this).children().css("color","#fff");
+		});
+	}
+	function clickIndex(){
+		$(".index").click(function () {
+			var ti = $(".index");
+			for(var i=0,l = ti.length;i < l;i++){
+				$(ti[i]).css({"background":"#f09f11"});//,"color":"#666"
+				$(ti[i]).children().css("color","#fff");
+			}
+			$(this).css({"background":"#fff"});
+			$(this).children().css("color","#f09f11");
+		});
+	}*/
+	function clickMaster(){
+		$(".menuMaster").click(function () {
+			var pArray = $(".menuMaster");
+			for(var i=0,l = pArray.length;i < l;i++){
+				$(pArray[i]).css({"background":"#f3f3f3"});//,"color":"#666"
+				$(pArray[i]).children().css("color","#666");
+			}
+			$(this).css({"background":"#6f9f00"});
+			$(this).children().css("color","#fff");
+		});
+	}
+	function clickEquipment(){
+		$(".equipment").click(function () {
+			var hArray = $(".equipment");
+			for(var i=0, l= hArray.length;i < l;i++){
+				$(hArray[i]).css({"background":"#fff","color":"#666"});
+				$(hArray[i]).children().css("color","#666");
+			}
+			$(this).css({"background":"#7dbe0f","color":"#fff"});
+			$(this).children().css("color","#fff");//$(this).attr("a"); ERROR!!  WHY?????
+			//$(".pc").load('/svg.html');
+		});
+	}
+	function clickEqShowPc1(){
+		$("#equipment1").click(function(){
+			//$(this).css({"background":"#7dbe0f","color":"#fff"});
+			$("#pc-height2").css("display","block");
+			$("#pc-height1").css("display","none");
+		});
+	}
+	function clickEqShowPc2(){
+		$("#equipment2").click(function(){
+			//$(this).css({"background":"#7dbe0f","color":"#fff"});
+			$("#pc-height1").css("display","block");
+			$("#pc-height2").css("display","none");
+		});
+	}
+	function showAllMadle(){
+		//setInterval("$("circle").attr("opacity","1")",12000);
+		$("#allMaster").click(function(){
+			$("#allMadle").css("display","block");
+		});
+	}
+	function hideAllMadel(){
+		$(".menuMaster").click(function () {
+			$("#allMadle").css("display","none");
+		});
+		showAllMadle();
+	}
+	/*function showCurve(){
+		$("#target-date1").click(function(){
+			var cs = $(".curve");
+			//alert(cs.length);
+			for(var  i= 0,l =cs.length;i < l;i++){
+				$(".curve").css("display","none");	
+			}
+			$("#weightCurve").css("display","block");
+		});		
+	}*/
+	function showWeight30(){
+		$("#target-date3").click(function(){
+			$(".health-pc").css("display","block");
+			$(".health-pc-none").css("display","none");
+		});		
+	}
+	</script>
+	<script type="text/javascript">
+	$(".ball2").mouseover(function(){
+		$("#fire-energy").css({
+			background:"#fff",
+			color:"#f09f11"
+		});
+	});
+	$(".ball2").mouseout(function(){
+		$("#fire-energy").css({
+			background:"#f09f11",
+			color:"#fff"
+		});
+	});
+	$(".ball3").mouseover(function(){
+		$("#sport-days").css({
+			background:"#fff",
+			color:"#7DB819"
+		});
+	});
+	$(".ball3").mouseout(function(){
+		$("#sport-days").css({
+			background:"#7DB819",
+			color: "#fff"
+		});
+	});
+	$(".ball4").mouseover(function(){
+		$("#sport-km").css({
+			background:"#fff",
+			color:"#2ba8d7"
+			});
+	});
+	$(".ball4").mouseout(function(){
+		$("#sport-km").css({
+			background: "#2ba8d7",
+			color:"#fff"
+		});
+	});
+	</script>
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>

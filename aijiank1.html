@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./stylesheets/aijiank.css" type="text/css">
+	<script src="./stylesheets/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="h-list">
+			<div class="logo">
+				<img src="./images/logo-home.png" alt="">
+			</div>
+			<ul>
+				<li class="active"><a>首页</a></li>
+				<li><a>健康计划</a></li>
+				<li><a>健康管理</a></li>
+				<li><a>家人关怀</a></li>
+				<li><a>健康档案</a></li>
+			</ul>
+			<div class="hright">
+				<a href="javascript:;">
+					<img src="./images/message.png" alt="">
+				</a>
+
+				<div class="user">
+					<img class="user-pc" src="./images/default.png" alt="">
+					</img>
+					<p id="userMessageP">
+						<a id="userMessageA" href="javascript:;">weijianxing</a>
+					</p>
+					<a href="javascript:;">
+						<div class="triangle"></div>
+					</a>	
+				</div>
+				
+			</div>
+			<div id="userMune" class="hideTagName">
+				<ul>
+					<li><a href="javascript:;">账号设置</a></li>
+					<li><a href="javascript:;">个人信息</a></li>
+					<li><a href="javascript:;">我的设备</a></li>
+					<li><a href="javascript:;">退出</a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="c-left">
+			<div class="c-left-1">
+				<h3>我加入爱健康以来</h3>
+				<div class="balls">
+					<div class="ball1" style="top: 20px;left: 30%;"></div>
+					<div class="ball2" id="move-ball">
+						<div class="fire-energy" id="fire-energy">
+							<p>共燃烧</p>
+							<p>
+								<span style="font-size:20px;font-weight:bold;">1215</span>卡
+							</p>
+						</div>
+					</div>
+					<div class="ball3" id="move-ball">
+						<div id="sport-days">
+							<p style="left: 50%;top: 20%;">已运动</p>
+							<p style="left: 40%;top: 50%;">
+								<span style="font-size:20px;font-weight:bold;">12</span>天
+							</p>
+						</div>
+					</div>
+					<div class="ball4" id="move-ball">
+						<div id="sport-km">
+							<p style="left: 50%;top: 20%;">积累路程</p>
+							<p style="left: 40%;top: 50%;">
+								<span style="font-size:20px;font-weight:bold;">15</span>Km
+							</p>
+						</div>
+					</div>
+					<div class="ball1"  style="top: 130px;right: 120px;"></div>
+				</div>
+			</div>
+			<div class="c-left-2">
+				<h4 class="equipment" id="equipment1">
+					<a href="javascript:;">智能配件</a>
+				</h4>	
+				<h4 class="equipment" id="equipment2" style="background:#6f9f00;">
+					<a href="javascript:;" style="color:#fff">手机</a>
+				</h4>
+				<div  class="pc" id="pc1">
+					
+					<iframe id="iframe1" src="./stylesheets/reload2.html" scrolling="no" frameborder="0"></iframe>
+					<div class="pc-circle2">
+							<p style="font-weight: bold;">运动时长</p>
+							<span style="color:#f4aa28;font-size:20px;left:44%;">0</span>
+							<span style="bottom: 10px;left:50%">分钟</span>
+					</div>
+				</div>
+				<div class="pc">
+					
+					
+					<div class="pc-height" id="pc-height1" >
+						<iframe  id="iframe2" src="./stylesheets/column1.html" scrolling="no" frameborder="0"></iframe>
+					</div>
+				</div>
+				
+				<div class="pic-num">
+					<div class="pic-icon">
+						<div class="bac-ball">
+							<img src="./images/foot-icon.png" alt="">
+						</div>
+						<div class="pic-text">
+							<span>步数</span><br>
+							<span class="color-span">0</span>
+							<span>步</span>
+						</div>
+					</div>
+					<div class="pic-icon">
+						<div class="bac-ball">
+							<img src="./images/hint-icon.png" alt="">
+						</div>
+						<div class="pic-text">
+							<span>距离</span><br>
+							<span class="color-span">0</span>
+							<span>公里</span>
+						</div>
+					</div>
+					<div class="pic-icon">
+						<div class="bac-ball">
+							<img src="./images/fire-icon.png" alt="">
+						</div>
+						<div class="pic-text">
+							<span>燃烧</span><br>
+							<span class="color-span">0</span>
+							<span>卡</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="c-left-3">
+				<div class="health-target">
+					<ul>
+						<li class="healthTargetLi2" id="targetLi1">
+							<a class="index" href="javascript:;">运动量</a>
+						</li>
+						<li class="healthTargetLi1" id="targetLi2"><a class="index" href="javascript:;">体重</a></li>
+						<li class="healthTargetLi1" id="targetLi3"><a class="index" href="javascript:;">血压</a></li>
+						<li class="healthTargetLi1" id="targetLi4"><a class="index" href="javascript:;">血糖</a></li>
+					</ul>
+				</div>
+				<div class="health-date">
+					<ul>
+						<li class="dateBackground1" id="target-date1">
+							<a href="javascript:;" class="target-dateA">当天</a>
+						</li>
+						<li class="dateBackground1" id="target-date2">
+							<a href="javascript:;" class="target-dateA">7天</a>
+						</li>
+						<li class="dateBackground2" id="target-date3">
+							<a href="javascript:;" class="target-dateA">30天</a>
+						</li>
+					</ul>
+				</div>
+				<div class="health-pc" >
+					<!--<p>运动量走势图</p>
+					<div>
+						<svg>
+							<path d="
+								M 0,200
+								L 0,20"
+								stroke="#000"
+								stroke-width="2"
+								id="path2"					
+							/>
+							<path d="
+								M 0,200
+								L 406,200"
+								stroke="#000"
+								stroke-width="2"
+								id="path2"
+							/>
+							<path d="
+								M 0,170
+								L 406,170"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,140
+								L 406,140"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,110
+								L 406,110"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,80
+								L 406,80"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,50
+								L 406,50"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 0,20
+								L 406,20"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 203,200
+								L 203,20"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 406,200
+								L 406,20"
+								stroke="#665"
+								stroke-width="0.3"
+								id="path2"
+							/>
+							<path d="
+								M 101.5,50
+								L 304.5,200"
+								stroke="#0A9DF7"
+								stroke-width="3"
+								id="path-line"
+							/>
+							<circle cx="101.5" cy="50" r="4" style="fill:#2A40DA" class="circle-node"/>
+							<circle cx="302" cy="197" r="4" style="fill:#2A40DA" class="circle-node"/>
+						</svg>
+						<ul class="trent-num">
+							<li>3.0</li>
+							<li>2.5</li>
+							<li>2.0</li>
+							<li>1.5</li>
+							<li>1.0</li>
+							<li>0.5</li>
+							<li>0.0</li>
+						</ul>
+						<span style="left: 101.5px;" class="trent-num">03-03</span>
+						<span style="left: 304.5px;" class="trent-num">03-04</span>
+					</div>	-->
+				</div>
+				<div class="health-pc-none" style="display:none;">
+					<div class="curve" id="sportCurve">亲，您还没有运动曲线哦！</div>
+					<div class="curve" id="weightCurve">亲，您还没有体重曲线哦！</div>
+					<div class="curve" id="bloodPressureCurve">亲，您还没有血压曲线哦！</div>
+					<div class="curve" id="bloodSugarCurve">亲，您还没有血糖曲线哦！</div>
+				</div>
+				<div class="health-icon"></div>
+			</div>
+		</div>
+		<div class="c-right">
+			<div class="c-right-1">
+				<div id="masterDate">
+					<span style="position: relative;">
+						<img src="./images/king.png" alt="">
+					</span>
+					<span style="color:#f4aa28;">运动达人榜</span>
+				</div>
+				<ul class="masterUl">
+					<li ><p class="menuMaster"><a href="javascript:;">昨天</a></p></li>
+					<li >
+						<p class="menuMaster" style="background:#6f9f00;">
+						<a href="javascript:;" style="color:#fff">今天</a></p>
+					</li>
+					<li ><p class="menuMaster"><a href="javascript:;">7天</a></p></li>
+					<li ><p class="menuMaster" id="allMaster"><a href="javascript:;">所有</a></p></li>
+				</ul>
+				<div id="allMadle">
+					<div>
+						<span>1</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>楞子</span>
+							<span>155.17公里</span>
+							<svg id="madleSvg">
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div>
+						<span>2</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>小新星</span>
+							<span>96.79公里</span>
+							<svg>
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div>
+						<span>3</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>小魏</span>
+							<span>15.77公里</span>
+							<svg>
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div>
+						<span>4</span>
+						<img src="./images/default.png" alt="">
+						<div>
+							<span>田苦辣</span>
+							<span>11.13公里</span>
+							<svg>
+								<path d="
+								M0,30
+								L120,30"
+								stroke="#1A8ABB" 
+								stroke-width="10"/>
+								<path d="
+								M120,30
+								L145,30"
+								stroke="#89D8DF"
+								stroke-width="10"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="c-right-2">
+				<h5>本周成绩</h5>
+				<div class="plan">
+					<iframe src="./stylesheets/leftCircle.html" scrolling="no" frameborder="0"></iframe>
+					<!--<svg id="svg-play">id="iframe2"
+						<path  d="
+						  	M73,20
+						    A53,53,0,0,1,118.89934640 46.5"
+						    stroke="#85c51f"  
+						    stroke-width="20" 
+						    fill="none" 
+						    transform="matrix(1,0,0,1,0,0)" 
+						    id="path2"
+						    class="path4"/>
+						<path  d="
+						  	M118.89934640 46.5           
+						    A53,53,0,1,1,73,20" 
+						    stroke="#f09f11"  
+						    stroke-width="20" 
+						    fill="none"  
+						    transform="matrix(1,0,0,1,0,0)" 
+						    id="path2"
+						    class="path4"/>
+						<path d="
+							M 73,73
+							T 133.621778264 38"
+							stroke="#deeeeb"
+							stroke-width="2"
+							/>	
+						<path d="
+							M 73,73
+							L 73,7"
+							stroke="#deeeeb"  
+							stroke-width="2"/>
+					</svg>-->
+					<div class="plan-circle2">
+						<p class="plan-p1">20%</p> 
+						<p class="plan-p2">计划完成度</p>
+					</div>
+				</div>
+				<div class="care-way">
+					<div>
+						<span class="care-span1">长辈关爱</span>
+						<div></div>
+						<span class="care-span2">4次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">晚辈关爱</span>
+						<div></div>
+						<span class="care-span2">3次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">夫妻浪漫</span>
+						<div></div>
+						<span class="care-span2">4次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">步行</span>
+						<div></div>
+						<span class="care-span2">12公里/周</span>
+					</div>
+					<div>
+						<span class="care-span1">跑步</span>
+						<div></div>
+						<span class="care-span2">33公里/周</span>
+					</div>
+					<div>
+						<span class="care-span1">骑行</span>
+						<div></div>
+						<span class="care-span2">22公里/周</span>
+					</div>
+					<div>
+						<span class="care-span1">篮球</span>
+						<div></div>
+						<span class="care-span2">3次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">控烟</span>
+						<div></div>
+						<span class="care-span2">1盒/周</span>
+					</div>
+					<div>
+						<span class="care-span1">限酒</span>
+						<div></div>
+						<span class="care-span2">4次/周</span>
+					</div>
+					<div>
+						<span class="care-span1">电影</span>
+						<div></div>
+						<span class="care-span2">3次/周</span>
+					</div>
+				</div>
+			</div>
+			<div class="c-right-3">
+				<h2>健康小贴士</h2>
+				<div>
+					<a href="javascript:;">
+						单车走天下 济南市郊的完美旅程
+					</a>
+					<p>
+						骑行是一种健康自然的运动旅游方式 ，能充分享受旅行过程之美 。一辆单车一套骑行装备即可出行 ，简单又环保。最近爱上骑行，作为新手，趁周末来个济南环城游，不亦乐乎！
+					</p>
+				</div>
+				<div>
+					<a href="javascript:;">
+						不良的生活习惯等于慢性自杀
+					</a>
+					<p>
+						健康的生活是每个人所追求的，有了健康的生活方式，才会有健康的身体，可是现在很多坏的生活习惯都会给人带来疾病，大家可能都不知道自己的一些坏习惯可能会让自己慢性自杀。
+					</p>
+				</div>
+				<div>
+					<a href="javascript:;">
+						【节日趣谈】愚人节，当心被突突了...
+					</a>
+					<p>
+						说到四月份，很多人想到就是那个逗比的节日“愚人节”！其实“愚”可是个褒义词哦~比如啥“大智若愚”啊，“愚公”啥的。都是一种精神象征！
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p class="about-us">
+			<a href="javascript:;">关于我们</a>
+			<a href="javascript:;">联系我们</a>
+		</p>
+		<p class="plant">Copyright © 2015 爱健康管理平台</p>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		move2();
+		move3();
+		move4();
+		setInterval("move2()",12000);
+		setInterval("move3()",12000);
+		setInterval("move4()",12000);
+		$(".circle-node").animate({opacity:"1"},3000);
+		$("#days-data1").animate({opacity:"1"},1000);
+		$("#days-data2").animate({opacity:"1"},1000);
+		$(".date-num-span").animate({opacity:"1"},3000);
+		$(".plan-p1").animate({opacity:"1"},1000);
+		$(".weight-circle").animate({opacity:"1"},4500);
+		$(".trent-num").animate({opacity:"1"},3000);
+		$(".path2").mouseover(function(){
+			$(this).css("transform","matrix(1.1,0,0,1.1,-14.5,-11.5)");
+			
+		});
+		$(".path2").mouseout(function(){
+			$(this).css("transform","matrix(1,0,0,1,0,0)");
+			
+		});
+		$(".path4").mouseover(function(){
+			$(this).css("transform","matrix(1.1,0,0,1.1,-9.9,-4)");
+			
+		});
+		$(".path4").mouseout(function(){
+			$(this).css("transform","matrix(1,0,0,1,0,0)");
+			
+		});
+		hideShowUserM();
+		clickMaster();
+		clickEquipment();
+		clickTargetDateA();
+		clickIndex();
+		clickEqShowPc1();
+		clickEqShowPc2();
+		showAllMadle();
+		hideAllMadel();
+	});
+    function hideShowUserM(){
+    	$(document).click(function(e){
+    		//alert("id");
+    		e = window.event || event ||e;
+			var obj = e.srcElement || e.target;
+            var id = obj.id;
+            if(id == "userMessageA"){ 
+            	$("#userMune").removeClass("hideTagName").addClass("showTagName");
+            }else{
+            	$("#userMune").removeClass("showTagName").addClass("hideTagName");
+            }
+    		//$("#userMune").removeClass("showTagName").addClass("hideTagName");///a在body里，所以不出
+    	});
+    }
+	function move2(){
+		$(".ball2").animate({top:'+=15'},4000).animate({top:'-=30'},4000).animate({top:'+=15'},4000);
+	}
+	function move3(){
+		$(".ball3").animate({top:'+=20'},4000).animate({top:'-=40'},4000).animate({top:'+=20'},4000);
+	}
+	function move4(){
+		$(".ball4").animate({top:'+=20'},4000).animate({top:'-=40'},4000).animate({top:'+=20'},4000);
+	}
+    function clickTargetDateA(){
+    	$(".target-dateA").click(function(){
+    		$(this).parent().parent().children().removeClass("dateBackground2").addClass("dateBackground1");
+    		$(this).parent().removeClass("dateBackground1").addClass("dateBackground2");//需要先移除再加，只表现第一个class属性
+    		var lis = $(".health-target").children().children();
+    		var classNameD = $(this).parent().attr("class").toString();
+    		var idNameD = $(this).parent().attr("id").toString();
+    		var cs = $(".curve");
+			for(var  i= 0,l =cs.length;i < l;i++){
+				$(".curve").css("display","none");	
+			}
+				
+    		if(idNameD=="target-date3"){
+    			var whichT2;
+    			for(var i=0,l=lis.length;i<l;i++){
+    				var classNameT = $(lis[i]).attr("class").toString();
+    				var idNameT = $(lis[i]).attr("id").toString();
+    				if(classNameT=="healthTargetLi2") {
+    					whichT2=i;
+    					if(whichT2==0){
+    						//alert("li1");
+    						$(".health-pc").css("display","block");
+    						$(".health-pc-none").css("display","none");
+    						//$("#sportCurve").css("display","block");
+    					}
+    					if(whichT2==1){
+    						//alert(whichT2);
+    						$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#weightCurve").css("display","block");
+    					}
+    					if(whichT2==2){
+    						$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodPressureCurve").css("display","block");
+    					}
+    					else if(whichT2==3){
+    						$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodSugarCurve").css("display","block");
+    					}
+    				}
+    			}
+    			//alert(whichT2);
+    		}else{
+    			var whichT1;
+    			for(var i=0,l=lis.length;i<l;i++){
+    				var classNameT = $(lis[i]).attr("class").toString();
+    				var idNameT = $(lis[i]).attr("id").toString();
+    				if(classNameT=="healthTargetLi2") {
+    					whichT1=i;
+    					//alert(whichT1);
+    					if(whichT1==0){
+    					//alert(whichT1);
+    					$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#sportCurve").css("display","block");
+    					}
+    					if(whichT1==1){
+    						$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#weightCurve").css("display","block");
+    					}
+    					if(whichT1==2){
+    						$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodPressureCurve").css("display","block");
+    					}
+    					else if(whichT1==3){
+    						$(".health-pc").css("display","none");
+    						$(".health-pc-none").css("display","block");
+    						$("#bloodSugarCurve").css("display","block");
+    					}
+    				}
+    			}
+    		}
+    	});
+    }
+
+    function clickIndex(){
+			$(".index").click(function () {
+			$(this).parent().parent().children().removeClass("healthTargetLi2").addClass("healthTargetLi1");
+    		$(this).parent().removeClass("healthTargetLi1").addClass("healthTargetLi2");
+    		var lis = $(".health-date").children().children();
+    		var cs = $(".curve");
+			for(var  i= 0,l =cs.length;i < l;i++){
+				$(".curve").css("display","none");	
+			}
+			var idNameT = $(this).parent().attr("id").toString();
+			var classNameT = $(this).parent().attr("class").toString();
+			if(idNameT=="targetLi1"){
+				for(var i=0,l=lis.length;i<l;i++){
+    				var classNameD = $(lis[i]).attr("class").toString();	
+    				var idNameD = $(lis[i]).attr("id").toString();
+    				if(idNameD=="target-date3"){
+    					//alert("sfdg");
+    					$(".health-pc").css("display","block");
+    					$(".health-pc-none").css("display","none");
+    				}
+    				if(idNameD=="target-date1" ||idNameD=="target-date2"){
+    					$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#sportCurve").css("display","block");
+    				}
+    			}
+			}
+			if(idNameT=="targetLi2"){
+				for(var i=0,l=lis.length;i<l;i++){
+					$(".health-pc").css("display","none");
+    				$(".health-pc-none").css("display","block");
+    				$("#weightCurve").css("display","block");
+				}
+			}
+			if(idNameT=="targetLi3"){
+				for(var i=0,l=lis.length;i<l;i++){
+					$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#bloodPressureCurve").css("display","block");
+				}
+			}
+			if(idNameT=="targetLi4"){
+				for(var i=0,l=lis.length;i<l;i++){
+					$(".health-pc").css("display","none");
+    					$(".health-pc-none").css("display","block");
+    					$("#bloodSugarCurve").css("display","block");
+				}
+			}
+		});
+	}
+	function clickMaster(){
+		$(".menuMaster").click(function () {
+			var pArray = $(".menuMaster");
+			for(var i=0,l = pArray.length;i < l;i++){
+				$(pArray[i]).css({"background":"#f3f3f3"});//,"color":"#666"
+				$(pArray[i]).children().css("color","#666");
+			}
+			$(this).css({"background":"#6f9f00"});
+			$(this).children().css("color","#fff");
+		});
+	}
+	function clickEquipment(){
+		$(".equipment").click(function () {
+			var hArray = $(".equipment");
+			for(var i=0, l= hArray.length;i < l;i++){
+				$(hArray[i]).css({"background":"#fff","color":"#666"});
+				$(hArray[i]).children().css("color","#666");
+			}
+			$(this).css({"background":"#7dbe0f","color":"#fff"});
+			$(this).children().css("color","#fff");//$(this).attr("a"); ERROR!!  WHY?????
+			document.getElementById('iframe1').src="./stylesheets/reload2.html";
+		});
+	}
+	function clickEqShowPc1(){
+		$("#equipment1").click(function(){
+			//$(this).css({"background":"#7dbe0f","color":"#fff"});
+			//$("#pc-height2").css("display","block");
+			//$("#pc-height1").css("display","none");
+			//$("#iframe3").css("display","none");
+			document.getElementById('iframe2').src="./stylesheets/column2.html";
+		});
+	}
+	function clickEqShowPc2(){
+		$("#equipment2").click(function(){
+			//$(this).css({"background":"#7dbe0f","color":"#fff"});
+			//$("#pc-height1").css("display","block");
+			//$("#pc-height2").css("display","none");
+			//$("#iframe2").css("display","none");
+			document.getElementById('iframe2').src="./stylesheets/column1.html";
+		});
+	}
+	function showAllMadle(){
+		//setInterval("$("circle").attr("opacity","1")",12000);
+		$("#allMaster").click(function(){
+			$("#allMadle").css("display","block");
+		});
+	}
+	function hideAllMadel(){
+		$(".menuMaster").click(function () {
+			$("#allMadle").css("display","none");
+		});
+		showAllMadle();
+	}
+	</script>
+	<script type="text/javascript">
+	$(".ball2").mouseover(function(){
+		$("#fire-energy").css({
+			background:"#fff",
+			color:"#f09f11"
+		});
+	});
+	$(".ball2").mouseout(function(){
+		$("#fire-energy").css({
+			background:"#f09f11",
+			color:"#fff"
+		});
+	});
+	$(".ball3").mouseover(function(){
+		$("#sport-days").css({
+			background:"#fff",
+			color:"#7DB819"
+		});
+	});
+	$(".ball3").mouseout(function(){
+		$("#sport-days").css({
+			background:"#7DB819",
+			color: "#fff"
+		});
+	});
+	$(".ball4").mouseover(function(){
+		$("#sport-km").css({
+			background:"#fff",
+			color:"#2ba8d7"
+			});
+	});
+	$(".ball4").mouseout(function(){
+		$("#sport-km").css({
+			background: "#2ba8d7",
+			color:"#fff"
+		});
+	});
+	</script>
+	<!--<script type="text/javascript">
+
+        var Sys = {};
+
+        var ua = navigator.userAgent.toLowerCase();
+
+        var s;
+
+        (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+
+        (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+
+        (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+
+        (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+
+        (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+
+
+        //以下进行测试
+
+        //if (Sys.ie) document.write('IE: ' + Sys.ie);
+        if (Sys.ie) {
+        	$("#pc1").css("display","none");
+        	$("#pc2").css("display","block");
+    }
+        if (Sys.firefox) {
+        	$("#pc1").css("display","block");
+        	$("#pc2").css("display","none");
+        }
+
+        if (Sys.chrome) {
+        	$("#pc1").css("display","block");
+        	$("#pc2").css("display","none");
+        }
+
+        if (Sys.opera) {
+        	$("#pc1").css("display","block");
+        	$("#pc2").css("display","none");
+        }
+
+        if (Sys.safari) {
+        	$("#pc1").css("display","none");
+        	$("#pc2").css("display","block");
+        }
+	</script>-->
+</body>
+</html>

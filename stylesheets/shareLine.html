@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        var chart; 
+        $(document).ready(function() {
+            chart = new Highcharts.Chart({
+            //HighCharts中chart属性配置
+                chart: {
+                    renderTo: 'container',//div 标签
+                    type: 'line',//图表类型
+                    width: 470,
+                    height: 300,
+                    plotBackgroundColor:"#fff",//主图表区背景颜色
+                    plotBorderColor:'red',//主图表边框颜色
+                    plotBorderWidth:0,//主图表边框宽度
+                    //zoomType:'xy'//拖动鼠标放大图表的方向
+                },
+                title: {
+                    text: '血压走势图'
+                },
+                credits: {
+                    enabled:false,
+                },
+                labels:{
+                    items:[{    
+                        style:{ //设置标签位置
+                            left:'100px',
+                            top:'50px'
+                        }
+                    }],
+                    style:{    //设置标签颜色
+                        color:'rgb(0,0,255)'
+                    }
+                },
+                xAxis: {
+                    tickWidth:0,//去除小竖线
+                    //tickLength: 50,
+                    //tickPixelInterval: 30,
+                    lineColor: '#666',
+                    categories: ['03-08','03-02'],
+                    gridLineColor: '#F5E9E9',//纵向网格线颜色
+                    gridLineWidth: 1 ,//纵向网格线宽度
+                    //gridLineDashStyle: 'longdash',
+                    lineWidth: 1,
+
+                }, 
+               yAxis: {
+                    min: 60,
+                    max: 200,
+                    title: {
+                        text: ''
+                    },
+                    labels:{
+                        //enabled: false//去除刻度
+                    },
+                    tickInterval: 20,//网格间隔
+                    lineWidth: 1,// Y轴的宽度
+                    lineColor: '#666',
+                    gridLineWidth: 10,// 横向格线宽度
+                    gridLineColor: '#F5E9E9',//横向网格线颜色
+                    //gridLineDashStyle: 'longdash',//横向网格线样式
+                    gridLineWidth: 1//横向网格线宽度
+                },               
+                 tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    borderColor: '#666' ,
+                    //valueSuffix:"",//后缀
+                    formatter: function() {
+                        var s = [];
+                        $.each(this.points, function(i, point) {
+                            s.push('<span style="color:'+ point.series.color + '">'+ point.series.name +'  '+point.y +"mmHg"+'<span>');
+                        });
+                        return s.join('<br/>');
+                    },
+        
+                },
+                series: [{
+                    name: '标准收缩压', 
+                    data: [120, 120]
+                    }, {
+                    name: '标准舒张压',
+                    data: [80,  80]
+                    }, {
+                    name: '你的收缩压',
+                    data: [180, 110]
+                    }, {
+                    name: '你的舒张压',
+                    data: [180, 70]
+                }]
+            });
+        });
+    });
+    </script>
+    </head>
+    <body>
+    <script src="highcharts.js"></script>   
+    <div id="container" style="min-width: 400px; height: 400px; margin: 0 "></div>
+    </body>
+</html>
