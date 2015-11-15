@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>progress-line</title>
+	<script type="text/javascript" src="jquery-1.11.2.min.js" ></script>
+	<script src="highcharts.js"></script>
+</head>
+<body>
+	 <div id="container" style="width: 500px; height: 330px; margin: 0 auto;">  
+	    <script type="text/javascript">  
+        $(function () {
+		    $('#container').highcharts({
+		        chart: {
+		            type: 'bar',
+		            // backgroundColor: {
+		            //     stops: [
+		            //         [0, 'rgb(255, 255, 255)']
+		            //     ]
+		            // },
+		        },
+		        title: {
+		            text: ''//'Historic World Population by Region'
+		        },
+		        subtitle: {
+		            text: ''//'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+		        },
+		        xAxis: {
+		            categories: ['Africa'],//, 'America', 'Asia', 'Europe', 'Oceania'],
+		            title: {
+		                text: null
+		            },
+		            labels: false,//去除categories
+		            lineWidth: 0,//去除X轴零刻度线
+		            tickWidth:0//, //刻度标签宽度
+		            // plotLines:[{
+		            // 	width: 1
+		            // }]
+		            
+		        },
+		        yAxis: {
+		            min: 0,
+		            title: {
+		                enabled: false// text: 'Population (millions)',
+		                // align: 'high'
+		            },
+		            labels: {		 
+		                enabled: false//去除横在底部的刻度值
+		            },
+		            gridLineWidth: 0,//去除Y轴刻度线
+		            stackLabels: {              
+						enabled: true, //显示总和标签
+						formatter: function() {
+			                return this.total+'公里';  // 重新设置节点显示数据
+			            },
+			            style:{
+			            	color: '#f00',
+			            	// position: 'absolute',
+			            	// top: '10px'
+			            }
+					}
+
+		        },
+		        tooltip: {
+		            enabled:false//去掉提示框
+		        },
+		        plotOptions: {
+		            bar: {
+		            	stacking: 'normal',
+		         //        dataLabels: {
+          	// 				enabled: true, // 在节点显示数据
+				       //    	formatter: function() {
+				       //          return this.point.y+'公里';  // 重新设置节点显示数据
+				       //      },
+				      	// },
+		            },
+		            series: {
+		               pointPadding: 0, //数据点之间的距离值
+		               groupPadding: 0.5, //分组之间的距离值
+		               //borderWidth: 0,
+		               // shadow: false,
+		               pointWidth:5 //柱子之间的距离值
+		           	},
+		           	// dataLabels:{
+              //               enabled:false, // dataLabels设为true
+              //       }
+		            //allowPointSlect: false
+		      //       column: {
+				    //     pointPadding: 0,
+				    //     borderWidth: 0,
+				    //     pointWidth: 2
+				    // }
+		        },
+		        legend: {
+		            enabled: false//去除图例
+		        },
+		        credits: {
+		            enabled: false
+		        },
+		        series: [{
+		            //name: 'Year 1800',
+		            data: [120, 120,120],
+		            color: 'rgb(137, 216, 223)'
+		        }, {
+		            //name: 'Year 1900',
+		           //  dataLabels: {
+          			// 		enabled: true
+          			// },
+		            data: [57,108,110],
+		            color: 'rgb(26, 138, 187)'//, 947, 408, 6]
+		        }],/*, {
+		            name: 'Year 2012',
+		            data: [1052, 954]//, 4250, 740, 38]
+		        }*/
+		        
+		    });
+		});
+    </script>  
+</body>
+</html>

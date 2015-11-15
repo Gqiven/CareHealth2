@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: microsoft yahei,tahoma,arial,\5b8b\4f53,sans-serif !important;
+  font-family: "microsoft yahei";
 }
 
 /* line 6, ../sass/aijiank.scss */
@@ -23,37 +23,20 @@ a {
 }
 
 /* line 17, ../sass/aijiank.scss */
-#header {
+.header {
   height: 67px;
   background-color: #6f9f00;
   min-width: 1190px;
   overflow: hidden;
 }
-/* line 23, ../sass/aijiank.scss */
-#header img {
-  height: 33px;
-  width: 119px;
-}
-/* line 27, ../sass/aijiank.scss */
-#header .h-list {
-  width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-/* line 32, ../sass/aijiank.scss */
-#header .logo {
-  float: left;
-  width: 119px;
-  margin: 16px 0;
-}
-/* line 37, ../sass/aijiank.scss */
-#header ul {
+/* line 22, ../sass/aijiank.scss */
+.header ul {
   overflow: hidden;
   margin: 18px 0 auto 18px;
   float: left;
 }
-/* line 41, ../sass/aijiank.scss */
-#header ul li {
+/* line 26, ../sass/aijiank.scss */
+.header ul li {
   text-align: center;
   line-height: 33px;
   height: 33px;
@@ -64,32 +47,59 @@ a {
   padding: 0 17px;
   font-size: 17px;
 }
-/* line 52, ../sass/aijiank.scss */
-#header ul li:hover {
+/* line 37, ../sass/aijiank.scss */
+.header ul li:hover {
   background: #638B15;
 }
-/* line 55, ../sass/aijiank.scss */
-#header ul .active {
+/* line 40, ../sass/aijiank.scss */
+.header ul .active {
   background: #507110;
 }
+
+/* line 45, ../sass/aijiank.scss */
+.h-list {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 50, ../sass/aijiank.scss */
+.logo {
+  float: left;
+  width: 119px;
+  margin: 16px 0;
+}
+/* line 54, ../sass/aijiank.scss */
+.logo img {
+  height: 33px;
+  width: 119px;
+}
+
 /* line 59, ../sass/aijiank.scss */
-#header .hright {
+.hright {
   width: 250px;
   height: 68px;
   float: right;
   overflow: hidden;
-  /*a{
-  	.tr{
-  		border-style: solid;
-  		border-width: 8px 7px 0 7px;
-  		border-color: #fff; 
-  	}
-  }*/
 }
-/* line 65, ../sass/aijiank.scss */
-#header .hright .user {
+/* line 64, ../sass/aijiank.scss */
+.hright img {
+  margin-left: 10px;
+}
+
+/* line 68, ../sass/aijiank.scss */
+.mail {
+  position: relative;
+  top: 36%;
+  float: right;
+  border: 0;
+  width: 24px;
+  height: 16px;
+}
+
+/* line 76, ../sass/aijiank.scss */
+.user {
   margin-top: 10px;
-  float: left;
   width: 70%;
   height: 44px;
   border-radius: 36px;
@@ -97,8 +107,27 @@ a {
   position: relative;
   float: right;
 }
-/* line 74, ../sass/aijiank.scss */
-#header .hright .user .user-pc {
+/* line 84, ../sass/aijiank.scss */
+.user p {
+  position: relative;
+  left: 50px;
+  top: 10px;
+  width: 60%;
+  margin: 0;
+}
+/* line 90, ../sass/aijiank.scss */
+.user p a {
+  color: #6f9f00;
+  display: inline-block;
+  width: 100%;
+}
+/* line 95, ../sass/aijiank.scss */
+.user p a:hover {
+  color: #425A09;
+}
+
+/* line 100, ../sass/aijiank.scss */
+.user-pc {
   position: absolute;
   top: 4px;
   left: -4px;
@@ -108,26 +137,9 @@ a {
   -webkit-border-radius: 18px;
   border-radius: 18px;
 }
-/* line 84, ../sass/aijiank.scss */
-#header .hright .user p {
-  position: relative;
-  left: 50px;
-  top: 10px;
-  width: 60%;
-  margin: 0;
-}
-/* line 90, ../sass/aijiank.scss */
-#header .hright .user p a {
-  color: #6f9f00;
-  display: inline-block;
-  width: 100%;
-}
-/* line 95, ../sass/aijiank.scss */
-#header .hright .user p a:hover {
-  color: #425A09;
-}
-/* line 99, ../sass/aijiank.scss */
-#header .hright .user .triangle {
+
+/* line 110, ../sass/aijiank.scss */
+.triangle {
   width: 0;
   height: 0;
   border-style: solid;
@@ -137,17 +149,9 @@ a {
   right: 15px;
   top: 20px;
 }
-/* line 112, ../sass/aijiank.scss */
-#header .hright img {
-  position: relative;
-  top: 36%;
-  margin-left: 10px;
-  width: 24px;
-  height: 16px;
-  float: right;
-}
-/* line 128, ../sass/aijiank.scss */
-#header #userMune {
+
+/* line 120, ../sass/aijiank.scss */
+#userMune {
   position: absolute;
   top: 50px;
   right: 183px;
@@ -156,105 +160,88 @@ a {
   background: #fff;
   z-index: 9999;
 }
-/* line 137, ../sass/aijiank.scss */
-#header #userMune ul li {
+/* line 129, ../sass/aijiank.scss */
+#userMune ul li {
   text-align: left;
 }
-/* line 139, ../sass/aijiank.scss */
-#header #userMune ul li a {
+/* line 131, ../sass/aijiank.scss */
+#userMune ul li a {
   color: #666;
 }
-/* line 142, ../sass/aijiank.scss */
-#header #userMune ul li a:hover {
+/* line 134, ../sass/aijiank.scss */
+#userMune ul li a:hover {
   color: #94C521;
   background: #fff;
 }
-/* line 147, ../sass/aijiank.scss */
-#header #userMune ul li:hover {
+/* line 139, ../sass/aijiank.scss */
+#userMune ul li:hover {
   background: #fff;
 }
 
-/* line 153, ../sass/aijiank.scss */
+/* line 144, ../sass/aijiank.scss */
 .showTagName {
   display: block;
 }
 
-/* line 156, ../sass/aijiank.scss */
+/* line 147, ../sass/aijiank.scss */
 .hideTagName {
   display: none;
 }
 
-/* line 159, ../sass/aijiank.scss */
-#content {
+/* line 150, ../sass/aijiank.scss */
+.content {
   margin: 20px 10%;
   min-width: 1190px;
   overflow: hidden;
 }
-/* line 163, ../sass/aijiank.scss */
-#content div {
+/* line 155, ../sass/aijiank.scss */
+.content div {
   display: inline-block;
-  background-color: #fff;
   float: left;
+}
+
+/* line 162, ../sass/aijiank.scss */
+.content > div {
   margin: 20px;
 }
-/* line 169, ../sass/aijiank.scss */
-#content .c-left {
-  width: 57%;
+
+/* line 165, ../sass/aijiank.scss */
+.c-left {
+  width: 60%;
   border: 1px solid #ECECEC;
   box-shadow: 8px 8px 8px #d4d4d4;
+  background-color: #fff;
 }
-/* line 173, ../sass/aijiank.scss */
-#content .c-left .c-left-1 {
+
+/* line 171, ../sass/aijiank.scss */
+.c-left-1 {
   width: 94%;
   margin: 15px 15px;
 }
-/* line 176, ../sass/aijiank.scss */
-#content .c-left .c-left-1 h3 {
+/* line 174, ../sass/aijiank.scss */
+.c-left-1 h3 {
   margin: 0 auto;
   text-align: center;
   color: #666;
   font-size: 22px;
 }
-/* line 182, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls {
+
+/* line 181, ../sass/aijiank.scss */
+.balls {
   width: 100%;
   margin: 0;
   position: relative;
   height: 250px;
-  	 			/*.ball3{
-  	 				background:#7DB819;
-  	 				position: absolute;
-  	 				top: 30px;
-  	 				left: 40%;
-  	 				width: 90px;
-      				height: 90px;
-      				border: 10px solid #7dbe0f;
-      				-moz-border-radius: 55px;
-      				-webkit-border-radius: 55px;
-      				border-radius: 55px;
-      				z-index: 4;
-      				overflow: hidden;
-      				#sport-days{
-      					width: 90px;
-      					height: 90px;	
-      					border-radius: 45px;
-      					margin: 0;
-      					position: absolute;
-      					background:#7DB819;
-      					color: #fff;
-  						overflow: hidden;
-  						//overflow: hidden;
-      				}
-  	 			}*/
 }
-/* line 187, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls p {
+/* line 186, ../sass/aijiank.scss */
+.balls p {
   width: 100%;
   text-align: center;
   margin-top: 17%;
 }
-/* line 194, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball1 {
+
+/* line 192, ../sass/aijiank.scss */
+.ball1 {
   position: absolute;
   width: 70px;
   height: 70px;
@@ -263,8 +250,9 @@ a {
   -webkit-border-radius: 50px;
   border-radius: 50px;
 }
-/* line 204, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball2 {
+
+/* line 201, ../sass/aijiank.scss */
+.ball2 {
   position: absolute;
   top: 20px;
   width: 100px;
@@ -279,21 +267,24 @@ a {
   color: #fff;
   /* Safari and Chrome */
 }
-/* line 224, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball2 .fire-energy {
+
+/* line 222, ../sass/aijiank.scss */
+.fire-energy {
   margin: 0;
   position: absolute;
   background: #f09f11;
   overflow: hidden;
 }
-/* line 230, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball2 #fire-energy {
+
+/* line 228, ../sass/aijiank.scss */
+#fire-energy {
   width: 100px;
   height: 100px;
   border-radius: 50px;
 }
-/* line 236, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball2:hover, #content .c-left .c-left-1 .balls .ball3:hover, #content .c-left .c-left-1 .balls .ball4:hover {
+
+/* line 233, ../sass/aijiank.scss */
+.ball2:hover, .ball3:hover, .ball4:hover {
   -moz-transform: scale(1.4, 1.4);
   /* for Firefox */
   -webkit-transform: scale(1.4, 1.4);
@@ -303,8 +294,9 @@ a {
   transform: scale(1.4, 1.4);
   background: #fff;
 }
-/* line 244, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball3 {
+
+/* line 241, ../sass/aijiank.scss */
+.ball3 {
   position: absolute;
   top: 30px;
   width: 100px;
@@ -317,8 +309,9 @@ a {
   background: #7DB819;
   left: 40%;
 }
-/* line 257, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball3 #sport-days {
+
+/* line 254, ../sass/aijiank.scss */
+#sport-days {
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -328,8 +321,9 @@ a {
   overflow: hidden;
   color: #fff;
 }
-/* line 293, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball4 {
+
+/* line 264, ../sass/aijiank.scss */
+.ball4 {
   position: absolute;
   top: 20px;
   width: 100px;
@@ -342,8 +336,9 @@ a {
   background: #2ba8d7;
   right: 20px;
 }
-/* line 305, ../sass/aijiank.scss */
-#content .c-left .c-left-1 .balls .ball4 #sport-km {
+
+/* line 277, ../sass/aijiank.scss */
+#sport-km {
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -354,8 +349,9 @@ a {
   background: #2ba8d7;
   color: #fff;
 }
-/* line 319, ../sass/aijiank.scss */
-#content .c-left .c-left-2 {
+
+/* line 288, ../sass/aijiank.scss */
+.c-left-2 {
   text-align: center;
   border: 1px solid #ECECEC;
   box-shadow: 0 0 8px #d4d4d4;
@@ -364,8 +360,8 @@ a {
   border-radius: 10px;
   overflow: hidden;
 }
-/* line 328, ../sass/aijiank.scss */
-#content .c-left .c-left-2 h4 {
+/* line 296, ../sass/aijiank.scss */
+.c-left-2 h4 {
   display: inline-block;
   float: left;
   width: 50%;
@@ -373,48 +369,54 @@ a {
   line-height: 35px;
   border-radius: 0 5px 0 0;
   color: #666;
-  /*.a-active{
-  	color: #fff;
-  }*/
 }
-/* line 336, ../sass/aijiank.scss */
-#content .c-left .c-left-2 h4 a {
+/* line 304, ../sass/aijiank.scss */
+.c-left-2 h4 a {
   color: #666;
 }
-/* line 343, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .h4-active {
+/* line 308, ../sass/aijiank.scss */
+.c-left-2 p {
+  margin-top: 30px;
+  color: #666;
+}
+
+/* line 313, ../sass/aijiank.scss */
+.h4-active {
   background: #7dbe0f;
 }
-/* line 347, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc {
+
+/* line 316, ../sass/aijiank.scss */
+.pc {
   height: 270px;
   width: 50%;
   margin: 0;
   float: left;
   position: relative;
 }
-/* line 353, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc iframe {
+/* line 322, ../sass/aijiank.scss */
+.pc iframe {
+  height: 100%;
+}
+
+/* line 333, ../sass/aijiank.scss */
+.pc > div {
+  position: relative;
+  height: 100%;
+}
+
+/* line 337, ../sass/aijiank.scss */
+#svg-pc {
   width: 100%;
   height: 100%;
 }
-/* line 357, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc #svg-pc {
-  width: 100%;
-  height: 100%;
-}
-/* line 361, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc span {
-  color: #666;
-  position: absolute;
-  font-size: 8px;
-}
-/* line 367, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc .weight-circle {
+
+/* line 341, ../sass/aijiank.scss */
+.weight-circle {
   opacity: 0;
 }
-/* line 370, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc .pc-circle1 {
+
+/* line 344, ../sass/aijiank.scss */
+.pc-circle1 {
   background: #f09f11;
   position: absolute;
   top: 40px;
@@ -425,52 +427,50 @@ a {
   -webkit-border-radius: 60px;
   border-radius: 60px;
 }
-/* line 382, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc .pc-circle2 {
+
+/* line 355, ../sass/aijiank.scss */
+.pc-circle2 {
   margin: 0;
   background: none;
-  position: absolute;
-  top: 38%;
+  position: relative;
+  bottom: 60%;
   left: 0;
   text-align: center;
   width: 100%;
   height: 80px;
   z-index: 4;
 }
-/* line 397, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc .pc-circle2 span {
-  margin-right: 20px;
-  position: absolute;
+/* line 366, ../sass/aijiank.scss */
+.pc-circle2 p {
+  width: 100%;
 }
-/* line 404, ../sass/aijiank.scss */
-#content .c-left .c-left-2 p {
-  margin-top: 30px;
-  color: #666;
+/* line 369, ../sass/aijiank.scss */
+.pc-circle2 p + p {
+  margin-top: 0;
 }
-/* line 408, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc-height {
+/* line 371, ../sass/aijiank.scss */
+.pc-circle2 p + p span:nth-child(1) {
+  color: #f4aa28;
+  font-size: 20px;
+}
+
+/* line 377, ../sass/aijiank.scss */
+.pc-height {
   position: relative;
   width: 100%;
   height: 100%;
   margin: 0;
 }
-/* line 415, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc-height svg {
-  height: 100%;
-  width: 100%;
-  animation-delay: 1.3s;
-  -webkit-animation-delay: 1.3s;
-  -webkit-animation-iteration-count: 1;
-}
-/* line 424, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc-height #days-data1 {
+
+/* line 390, ../sass/aijiank.scss */
+#days-data1 {
   position: relative;
   height: 20px;
   left: 15%;
   opacity: 0;
 }
-/* line 430, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc-height #days-data1 li {
+/* line 395, ../sass/aijiank.scss */
+#days-data1 li {
   float: left;
   list-style: none;
   margin: 0 20px 0 0;
@@ -478,15 +478,16 @@ a {
   color: #666;
   font-size: 10px;
 }
-/* line 439, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc-height #days-data2 {
+
+/* line 404, ../sass/aijiank.scss */
+#days-data2 {
   position: relative;
   height: 20px;
   left: 15%;
   opacity: 0;
 }
-/* line 445, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc-height #days-data2 li {
+/* line 409, ../sass/aijiank.scss */
+#days-data2 li {
   float: left;
   list-style: none;
   margin: 0 9px 0 0;
@@ -494,21 +495,24 @@ a {
   color: #666;
   font-size: 10px;
 }
-/* line 454, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pc-height .date-num-span {
+
+/* line 418, ../sass/aijiank.scss */
+.date-num-span {
   position: absolute;
   opacity: 0;
 }
-/* line 459, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pic-num {
+
+/* line 422, ../sass/aijiank.scss */
+.pic-num {
   width: 100%;
   height: 80px;
   margin: 30px 0 0 0;
   position: relative;
   overflow: hidden;
 }
-/* line 465, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pic-num .pic-icon {
+
+/* line 429, ../sass/aijiank.scss */
+.pic-icon {
   float: left;
   width: 33%;
   height: 70px;
@@ -516,8 +520,9 @@ a {
   position: relative;
   overflow: hidden;
 }
-/* line 472, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pic-num .pic-icon .bac-ball {
+
+/* line 437, ../sass/aijiank.scss */
+.bac-ball {
   float: left;
   margin: 0;
   background: #f3f3f3;
@@ -530,25 +535,27 @@ a {
   -webkit-border-radius: 25px;
   border-radius: 25px;
 }
-/* line 484, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pic-num .pic-icon .bac-ball img {
+/* line 449, ../sass/aijiank.scss */
+.bac-ball img {
   height: 50px;
   width: 50px;
 }
-/* line 491, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pic-num .pic-icon .pic-text {
+
+/* line 454, ../sass/aijiank.scss */
+.pic-text {
   margin: 0;
   position: absolute;
   top: 15px;
   right: 40px;
   color: #666;
 }
-/* line 497, ../sass/aijiank.scss */
-#content .c-left .c-left-2 .pic-num .pic-icon .pic-text .color-span {
+/* line 460, ../sass/aijiank.scss */
+.pic-text .color-span {
   color: #f4aa28;
 }
-/* line 504, ../sass/aijiank.scss */
-#content .c-left .c-left-3 {
+
+/* line 464, ../sass/aijiank.scss */
+.c-left-3 {
   border: 1px solid #ECECEC;
   box-shadow: 0 0 8px #d4d4d4;
   width: 88%;
@@ -556,20 +563,21 @@ a {
   border-radius: 10px;
   overflow: hidden;
 }
-/* line 513, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-target {
+
+/* line 472, ../sass/aijiank.scss */
+.health-target {
   margin: 0 0 0 20px;
   height: 100%;
   float: left;
   border-right: 1px solid #ECECEC;
   position: relative;
 }
-/* line 520, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-target ul {
+/* line 478, ../sass/aijiank.scss */
+.health-target ul {
   margin-right: -3px;
 }
-/* line 524, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-target ul li {
+/* line 480, ../sass/aijiank.scss */
+.health-target ul li {
   width: 66px;
   height: 34px;
   line-height: 34px;
@@ -580,23 +588,24 @@ a {
   font-size: 15px;
   margin-bottom: 10px;
 }
-/* line 536, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-target ul li a {
+/* line 490, ../sass/aijiank.scss */
+.health-target ul li a {
   display: inline-block;
   width: 100%;
 }
-/* line 543, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-date {
+
+/* line 497, ../sass/aijiank.scss */
+.health-date {
   margin: 0;
   width: 80%;
 }
-/* line 547, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-date ul {
+/* line 500, ../sass/aijiank.scss */
+.health-date ul {
   margin: 10px 20%;
   overflow: hidden;
 }
-/* line 550, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-date ul li {
+/* line 503, ../sass/aijiank.scss */
+.health-date ul li {
   float: left;
   width: 50px;
   height: 24px;
@@ -606,68 +615,75 @@ a {
   font-size: 15px;
   margin: 0 20px;
 }
-/* line 561, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-date ul li a {
+/* line 512, ../sass/aijiank.scss */
+.health-date ul li a {
   width: 100%;
   display: inline-block;
 }
-/* line 568, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc {
-  color: #666;
+
+/* line 519, ../sass/aijiank.scss */
+.bloodPressure-pc {
   float: left;
-  width: 68%;
-  margin: 0 5% 0 10%;
-}
-/* line 573, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc p {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-/* line 578, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc div {
-  float: left;
-  width: 100%;
-  height: 200px;
-  position: relative;
+  width: 80%;
   margin: 0;
-  font-size: 8px;
 }
-/* line 587, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc div svg {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* line 523, ../sass/aijiank.scss */
+.bloodPressure-pc iframe {
   width: 100%;
-  height: 100%;
+  height: 300px;
 }
-/* line 593, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc div svg circle {
+
+/*.health-pc{
+	color: #666;
+	float: left;
+	width: 68%;
+	margin: 0 5% 0 10%;
+	p{
+		font-size: 18px;
+		text-align:center;
+		margin-bottom: 10px;
+	}
+	div{
+		float: left;
+	  	width: 100%;
+		height: 200px;
+		position: relative;
+		margin: 0;
+		font-size: 8px;
+		// svg{
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	circle{
+		// 		opacity: 0;
+		// 	}
+		// }
+		ul{
+			height: 100%;
+			width: 30px;
+			position: absolute;
+			left: -30px;
+			top: 14px;
+			
+			li{
+				height: 29px;
+			}
+		}
+		span{
+			position: absolute;
+			bottom: -20px;
+		}			
+	}	
+}*/
+/* line 572, ../sass/aijiank.scss */
+.trent-num {
   opacity: 0;
 }
-/* line 597, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc div ul {
-  height: 100%;
-  width: 30px;
-  position: absolute;
-  left: -30px;
-  top: 14px;
-}
-/* line 604, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc div ul li {
-  height: 29px;
-}
-/* line 608, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc div span {
-  position: absolute;
-  bottom: -20px;
-}
-/* line 612, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc div .trent-num {
-  opacity: 0;
-}
-/* line 617, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc-none {
+
+/* line 575, ../sass/aijiank.scss */
+.health-pc-none {
   float: left;
   width: 68%;
   height: 234px;
@@ -675,8 +691,8 @@ a {
   font-size: 25px;
   position: relative;
 }
-/* line 625, ../sass/aijiank.scss */
-#content .c-left .c-left-3 .health-pc-none div {
+/* line 582, ../sass/aijiank.scss */
+.health-pc-none div {
   position: absolute;
   left: 0px;
   top: 150px;
@@ -689,108 +705,37 @@ a {
   /* Opera: */
   -o-animation: myfirst 4s linear 2s infinite alternate;
 }
-/* line 642, ../sass/aijiank.scss */
-#content .c-right {
-  width: 24%;
+
+/* line 596, ../sass/aijiank.scss */
+.c-right {
+  width: 27%;
   margin-right: 0;
   background: #f8faf3;
 }
-/* line 646, ../sass/aijiank.scss */
-#content .c-right .c-right-1 {
+
+/* line 601, ../sass/aijiank.scss */
+.c-right-1 {
   width: 100%;
   margin: 0;
   background: #fff;
   border: 1px solid #ECECEC;
   box-shadow: 0px 4px 4px #d4d4d4;
 }
-/* line 653, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #masterDate {
-  width: 100%;
-  margin: 20px 0 15px 0;
-  text-align: center;
-}
-/* line 657, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #masterDate span {
-  font-size: 20px;
-}
-/* line 659, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #masterDate span img {
-  margin-bottom: -6px;
-}
-/* line 666, ../sass/aijiank.scss */
-#content .c-right .c-right-1 .masterUl {
-  margin: 0 auto 40px auto;
-}
-/* line 669, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #allMadle {
-  display: none;
-  width: 78%;
-  margin: 0 11%;
-}
-/* line 673, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #allMadle div {
-  margin: 0 0 20px 0;
-  width: 100%;
-  position: relative;
-}
-/* line 677, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #allMadle div span {
-  background: url("../images/medal.png") no-repeat -3px -1px;
-  color: #fb742a;
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  text-align: center;
-}
-/* line 685, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #allMadle div img {
-  margin: 0 10px 0 10px;
-  position: absolute;
-  top: 0px;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-}
-/* line 693, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #allMadle div div {
-  float: right;
-  width: 65%;
-  height: 30px;
-  position: relative;
-  margin: 0;
-}
-/* line 700, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #allMadle div div svg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 5px;
-  right: 0;
-}
-/* line 707, ../sass/aijiank.scss */
-#content .c-right .c-right-1 #allMadle div div span {
-  background: #fff;
-  color: #666;
-  width: 70px;
-  height: 10px;
-  font-size: 10px;
-}
-/* line 719, ../sass/aijiank.scss */
-#content .c-right .c-right-1 ul {
+/* line 607, ../sass/aijiank.scss */
+.c-right-1 ul {
   width: 80%;
-  margin: 0 auto;
   overflow: hidden;
   text-align: center;
   color: #666;
 }
-/* line 725, ../sass/aijiank.scss */
-#content .c-right .c-right-1 ul li {
+/* line 612, ../sass/aijiank.scss */
+.c-right-1 ul li {
   width: 25%;
   float: left;
   height: 30px;
 }
-/* line 729, ../sass/aijiank.scss */
-#content .c-right .c-right-1 ul li p {
+/* line 616, ../sass/aijiank.scss */
+.c-right-1 ul li p {
   margin: 0 5px;
   background: #f3f3f3;
   border-radius: 5px;
@@ -799,41 +744,142 @@ a {
   line-height: 30px;
   font-size: 17px;
 }
-/* line 737, ../sass/aijiank.scss */
-#content .c-right .c-right-1 ul li p a {
+/* line 624, ../sass/aijiank.scss */
+.c-right-1 ul li p a {
   color: #666;
 }
-/* line 746, ../sass/aijiank.scss */
-#content .c-right .c-right-2 {
+
+/* line 631, ../sass/aijiank.scss */
+#masterDate {
+  width: 100%;
+  margin: 20px 0 15px 0;
+  text-align: center;
+}
+/* line 635, ../sass/aijiank.scss */
+#masterDate span {
+  font-size: 20px;
+}
+/* line 637, ../sass/aijiank.scss */
+#masterDate span img {
+  margin-bottom: -6px;
+}
+
+/* line 642, ../sass/aijiank.scss */
+.masterUl {
+  margin: 0 auto 40px auto;
+}
+
+/* line 645, ../sass/aijiank.scss */
+#allMadle {
+  display: none;
+  width: 78%;
+  margin: 0 11%;
+}
+/* line 649, ../sass/aijiank.scss */
+#allMadle img {
+  margin: 0 10px 0 10px;
+  position: absolute;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+/* line 657, ../sass/aijiank.scss */
+#allMadle p {
+  width: 145px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+}
+/* line 663, ../sass/aijiank.scss */
+#allMadle p span {
+  background: #fff;
+  color: #666;
+  width: 70px;
+  height: 10px;
+  font-size: 10px;
+}
+
+/* line 715, ../sass/aijiank.scss */
+.name {
+  padding-right: 50px;
+}
+
+/* line 718, ../sass/aijiank.scss */
+#allMadle > div {
+  margin: 0 0 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+/* line 724, ../sass/aijiank.scss */
+#allMadle > div > span {
+  background: url("../images/medal.png") no-repeat -3px -1px;
+  color: #fb742a;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+/* line 732, ../sass/aijiank.scss */
+.kmLine {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin: 0;
+  height: 10px;
+  width: 145px;
+  background: #89D8DF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 744, ../sass/aijiank.scss */
+.kmLineMask {
+  margin: 0;
+  height: 10px;
+  width: 94px;
+  background: #1A8ABB;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 753, ../sass/aijiank.scss */
+.c-right-2 {
   width: 100%;
   margin: 20px 0 0 0;
   background: #fff;
   border: 1px solid #ECECEC;
   box-shadow: 0px 4px 4px #d4d4d4;
 }
-/* line 752, ../sass/aijiank.scss */
-#content .c-right .c-right-2 h5 {
+/* line 759, ../sass/aijiank.scss */
+.c-right-2 h5 {
   margin-top: 10px;
   text-align: center;
   color: #85c51f;
   font-size: 17px;
   font-weight: normal;
 }
-/* line 759, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan {
+
+/* line 767, ../sass/aijiank.scss */
+.plan {
   background: #deeeeb;
   width: 90%;
   height: 170px;
   margin: 20px 5% 0 5%;
   position: relative;
 }
-/* line 765, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan iframe {
+/* line 773, ../sass/aijiank.scss */
+.plan iframe {
   width: 100%;
   height: 100%;
 }
-/* line 770, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan #svg-play {
+
+/* line 778, ../sass/aijiank.scss */
+#svg-play {
   width: 160px;
   height: 160px;
   position: absolute;
@@ -841,8 +887,9 @@ a {
   left: 50%;
   margin-left: -73px;
 }
-/* line 778, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan .plan-circle1 {
+
+/* line 786, ../sass/aijiank.scss */
+.plan-circle1 {
   background: #f09f11;
   margin: 20px auto;
   position: relative;
@@ -854,8 +901,9 @@ a {
   -webkit-border-radius: 60px;
   border-radius: 60px;
 }
-/* line 793, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan .plan-circle2 {
+
+/* line 798, ../sass/aijiank.scss */
+.plan-circle2 {
   margin: 0;
   margin-left: -39px;
   background: #deeeeb;
@@ -869,20 +917,22 @@ a {
   border-radius: 40px;
   z-index: 4;
 }
-/* line 806, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan .plan-circle2 span {
+/* line 811, ../sass/aijiank.scss */
+.plan-circle2 span {
   position: absolute;
 }
-/* line 809, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan .plan-circle2 .plan-p1 {
+
+/* line 815, ../sass/aijiank.scss */
+.plan-p1 {
   margin-top: 10px;
   color: #f4aa28;
   font-size: 24px;
   text-align: center;
   opacity: 0;
 }
-/* line 818, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .plan .plan-circle2 .plan-p2 {
+
+/* line 822, ../sass/aijiank.scss */
+.plan-p2 {
   color: #11a385;
   font-size: 14px;
   text-align: center;
@@ -890,28 +940,21 @@ a {
   left: 2px;
   bottom: 20px;
 }
-/* line 828, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .care-way {
+
+/* line 830, ../sass/aijiank.scss */
+.care-way {
   margin: 10px 10px 30px 10px;
   font-size: 14px;
   color: #666;
-  /*float: left;
-  
-  width: 25%;
-  color: #666;
-  font-size: 15px;
-  li{
-  	margin: 10px 0;
-  }*/
 }
-/* line 832, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .care-way div {
+/* line 834, ../sass/aijiank.scss */
+.care-way div {
   display: block;
   width: 100%;
   margin: 10px 0 0 0;
 }
-/* line 836, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .care-way div div {
+/* line 838, ../sass/aijiank.scss */
+.care-way div div {
   width: 45%;
   text-align: center;
   margin: 5px 5px 0 5px;
@@ -920,48 +963,49 @@ a {
   height: 10px;
   border-radius: 5px;
 }
-/* line 846, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .care-way div .care-span1 {
+/* line 847, ../sass/aijiank.scss */
+.care-way div .care-span1 {
   text-align: right;
   width: 25%;
   float: left;
 }
-/* line 851, ../sass/aijiank.scss */
-#content .c-right .c-right-2 .care-way div .care-span2 {
+/* line 852, ../sass/aijiank.scss */
+.care-way div .care-span2 {
   text-align: left;
   width: 25%;
   float: left;
 }
-/* line 871, ../sass/aijiank.scss */
-#content .c-right .c-right-3 {
+
+/* line 863, ../sass/aijiank.scss */
+.c-right-3 {
   background: #f8faf3;
   width: 100%;
 }
-/* line 874, ../sass/aijiank.scss */
-#content .c-right .c-right-3 h2 {
+/* line 866, ../sass/aijiank.scss */
+.c-right-3 h2 {
   font-weight: normal;
   color: #79a427;
   font-size: 20px;
   margin: 20px 0 20px 0;
 }
-/* line 880, ../sass/aijiank.scss */
-#content .c-right .c-right-3 div {
+/* line 872, ../sass/aijiank.scss */
+.c-right-3 div {
   margin: 0;
   background: #f8faf3;
 }
-/* line 883, ../sass/aijiank.scss */
-#content .c-right .c-right-3 div a {
+/* line 875, ../sass/aijiank.scss */
+.c-right-3 div a {
   color: #80bd1e;
   font-size: 14px;
 }
-/* line 887, ../sass/aijiank.scss */
-#content .c-right .c-right-3 div p {
+/* line 879, ../sass/aijiank.scss */
+.c-right-3 div p {
   font-size: 14px;
   color: #666;
   margin: 15px 0;
 }
 
-/* line 896, ../sass/aijiank.scss */
+/* line 886, ../sass/aijiank.scss */
 #footer {
   background-color: #c9d9b3;
   border-top: 6px solid #709e18;
@@ -969,98 +1013,100 @@ a {
   height: 100px;
   position: relative;
 }
-/* line 902, ../sass/aijiank.scss */
+/* line 892, ../sass/aijiank.scss */
 #footer p {
   width: 100%;
   text-align: center;
 }
-/* line 908, ../sass/aijiank.scss */
-#footer .about-us {
+
+/* line 897, ../sass/aijiank.scss */
+.about-us {
   top: 30px;
   margin: 20px 0;
 }
-/* line 911, ../sass/aijiank.scss */
-#footer .about-us a {
+/* line 900, ../sass/aijiank.scss */
+.about-us a {
   font-size: 16px;
   color: #709e18;
   margin: 0 20px 0 0;
 }
-/* line 917, ../sass/aijiank.scss */
-#footer .plant {
+
+/* line 906, ../sass/aijiank.scss */
+.plant {
   bottom: 30px;
   font-size: 12px;
   color: #666;
 }
 
-/* line 923, ../sass/aijiank.scss */
+/* line 911, ../sass/aijiank.scss */
 .dateBackground2 {
   background: #7DB819;
   color: #fff;
 }
-/* line 926, ../sass/aijiank.scss */
+/* line 914, ../sass/aijiank.scss */
 .dateBackground2 a {
   color: #fff;
 }
 
-/* line 930, ../sass/aijiank.scss */
+/* line 918, ../sass/aijiank.scss */
 .dateBackground1 {
   background: #f3f3f3;
   color: #666;
 }
-/* line 933, ../sass/aijiank.scss */
+/* line 921, ../sass/aijiank.scss */
 .dateBackground1 a {
   color: #666;
 }
 
-/* line 937, ../sass/aijiank.scss */
+/* line 925, ../sass/aijiank.scss */
 .healthTargetLi2 {
   background: #fff;
 }
-/* line 939, ../sass/aijiank.scss */
+/* line 927, ../sass/aijiank.scss */
 .healthTargetLi2 a {
   color: #f09f11;
 }
 
-/* line 943, ../sass/aijiank.scss */
+/* line 931, ../sass/aijiank.scss */
 .healthTargetLi1 {
   background: #f09f11;
 }
-/* line 945, ../sass/aijiank.scss */
+/* line 933, ../sass/aijiank.scss */
 .healthTargetLi1 a {
   color: #fff;
 }
 
-/* line 949, ../sass/aijiank.scss */
+/* line 937, ../sass/aijiank.scss */
 .showblock {
   display: block;
 }
 
-/* line 952, ../sass/aijiank.scss */
+/* line 940, ../sass/aijiank.scss */
 .hidenone {
   display: none;
 }
 
-/* line 955, ../sass/aijiank.scss */
+/* line 943, ../sass/aijiank.scss */
 #path1 {
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
 }
 
-/* line 962, ../sass/aijiank.scss */
+/* line 950, ../sass/aijiank.scss */
 #path2 {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
 }
 
-/* line 968, ../sass/aijiank.scss */
+/* line 956, ../sass/aijiank.scss */
 #path-line {
   animation-delay: 1.3s;
   -webkit-animation-delay: 1.3s;
   -webkit-animation-iteration-count: 1;
 }
 
-/* line 973, ../sass/aijiank.scss */
+/* line 961, ../sass/aijiank.scss */
 path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
